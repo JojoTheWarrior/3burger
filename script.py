@@ -4,12 +4,39 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait, Select
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 
+
+# for more user-like movements
+def get_human_like_options():
+    options = Options()
+
+    # Launch in normal (non-headless) mode
+    # options.add_argument("--headless")  # Keep commented if you want visible
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--start-maximized")
+    options.add_argument("--disable-extensions")
+    
+    # Fake a random but valid user-agent
+    user_agents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    ]
+    options.add_argument(f"user-agent={random.choice(user_agents)}")
+
+    # No automation flag in JS
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option("useAutomationExtension", False)
+
+    return options
+
 # is this incognito or normal mode?
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=get_human_like_options())
 
 driver.get("https://order.harveys.ca/login")
 
@@ -103,6 +130,19 @@ takeout_option.click()
 
 time.sleep(1)
 
+# selects order later
+"""
+later_label = wait.until(
+    EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Later']"))
+)
+later_label.click()
+
+time_later = Select(driver.find_element(By.ID, "inTime"))
+time_later.select_by_value("20:30")
+"""
+
+# saves order setup
+
 save_order_setup = driver.find_element("xpath", "//button[contains(normalize-space(.), 'Save Order Setup')]")
 save_order_setup.click()
 
@@ -147,9 +187,11 @@ toppings_div.click()
 
 time.sleep(1)
 
-toppings = ["Shredded Lettuce", "Tomatoes", "Onions", "Pickles", "Hot Peppers", "Jalapeños", "Black Olives", "Salt & Pepper"]
+# all toppings are ["Shredded Lettuce", "Onions", "Tomatoes", "Pickles", "Relish", "Hot Peppers", "Jalapeños", "Black Olives", "Cucumbers", "Salt & Pepper"]
+toppings = ["Shredded Lettuce", "Onions", "Pickles", "Hot Peppers", "Jalapeños", "Black Olives", "Salt & Pepper"]
+richard_toppings = ["Shredded Lettuce", "Onions", "Pickles", "Cucumbers"]
 
-for topping in toppings:
+for topping in richard_toppings:
     topping_button = wait.until(
         EC.element_to_be_clickable((
             By.XPATH,
@@ -172,7 +214,8 @@ sauces_div.click()
 
 time.sleep(1)
 
-sauces = ["Chipotle"]
+# all sauces are ["Ketchup", "Mustard", "Mayo", "BBQ Sauce", "Ghost Pepper Mayo", "Chipotle", "Harv Sauce", "Hot Sauce", "Garlic Mayo", "Ranch"]
+sauces = ["Mayo"]
 
 # playing russian roulette with ghost pepper sauce - 1/6 chance to add death sauce
 if random.random() < (1.0 / 6.0):
@@ -234,16 +277,11 @@ time.sleep(0.5)
 wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
 # clicks "confirm"
-time.sleep(0.5)
-confirm_button = wait.until(
-    EC.element_to_be_clickable(
-        (By.XPATH, '//button[normalize-space()="Confirm"]')
-    )
-)
-confirm_button.click()
 
 time.sleep(0.5)
 wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+time.sleep(0.5)
 
 # clicks paying option
 new_cc_radio = wait.until(
@@ -264,12 +302,12 @@ cc_postal_code_box = driver.find_element(By.ID, "inPostalCode")
 expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
 expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
 
-card_number = "1234123412341234"
-card_name = "Hugh Mongus"
-card_cvv = "123"
-card_postal_code = "A1B2C3"
-card_month = "08"
-card_year = "2025"
+card_number = "4520023003803579"
+card_name = "Kang Yu"
+card_cvv = "077"
+card_postal_code = "M2K2J1"
+card_month = "02"
+card_year = "2029"
 
 cc_number_box.send_keys(card_number)
 cc_name_box.send_keys(card_name)
@@ -285,5 +323,4 @@ complete_order_button = wait.until(
 
 # complete_order_button.click()
 
-time.sleep(5)
-
+time.sleep(90)
