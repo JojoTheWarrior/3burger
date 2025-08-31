@@ -84,14 +84,14 @@ ok_button.click()
 time.sleep(1)
 
 location_bar = driver.find_element(By.CSS_SELECTOR, 'input.autocomplete')
-location_bar.send_keys("3343 Bayview Avenue")
+location_bar.send_keys("170 University Ave W")
 
 time.sleep(1)
 
 # decide if we're going to 3343 bayview avenue or 2555 victoria park avenue
 restaurant_button = driver.find_element(
     By.XPATH,
-    '//div[strong[text()="3343 Bayview Avenue"]]'
+    '//div[strong[text()="170 University Ave W"]]'
 )
 restaurant_button.click()
 
@@ -108,6 +108,7 @@ save_order_setup.click()
 
 # go to add coupon code page
 wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+time.sleep(0.5)
 
 add_coupon_code = driver.find_element("xpath", "//a[contains(normalize-space(.), '+ Add Coupon Code')]")
 add_coupon_code.click()
@@ -244,6 +245,7 @@ confirm_button.click()
 
 time.sleep(0.5)
 wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+time.sleep(1)
 
 # clicks paying option
 new_cc_radio = wait.until(
