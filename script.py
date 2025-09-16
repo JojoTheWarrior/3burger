@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 from re import match
 from selenium import webdriver
@@ -13,8 +14,15 @@ import random
 
 app = Flask(__name__)
 
+CORS(app)
+
 def decrypt(encrypted_str):
     return encrypted_str # placeholder for rsa decryption
+
+# endpoing to check if server is running
+@app.route('/ping')
+def ping():
+    return jsonify({"status": "ok"}), 200
 
 # endpoint to trigger task
 @app.route('/get_burger', methods=['POST'])
@@ -77,6 +85,10 @@ def get_human_like_options():
 
 def run_selenium_task(toppings, sauces, location, order_time, card):
     try:
+        # testing card decryption
+        card_month, card_year = card.get("expiry").split("/")
+        print(f"card month {card_month}, card year {card_year}")
+
         driver = webdriver.Chrome(options=get_human_like_options())
 
         driver.get("https://order.harveys.ca/login")
@@ -150,11 +162,15 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
         time.sleep(1.5)
 
         # decide if we're going to 3343 bayview avenue or 2555 victoria park avenue or 170 University Avenue West
-        restaurant_button = driver.find_element(
-            By.XPATH,
-            '//div[strong[text()="${location}"]]'
+        restaurant_inputs = wait.until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#autocomplete-list > div"))
         )
-        restaurant_button.click()
+
+        print(f"restaurants found ${restaurant_inputs}")
+        try:
+            restaurant_inputs[0].click()
+        except Exception as e:
+            print("couldn't find restaurant")
 
         time.sleep(0.5)
         wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
@@ -352,6 +368,8 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
         )
         new_cc_radio.click()
 
+        print("clicking payment option went through")
+
         time.sleep(0.5)
         wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
@@ -363,7 +381,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
         expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
         expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
 
-        card_number = decrypt(card.get("number"))
+        card_number = decrypt(card.get("card_number"))
         card_name = card.get("name")
         card_cvv = decrypt(card.get("cvv"))
         card_postal_code = card.get("postal_code")
@@ -374,7 +392,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
         cc_cvv_box.send_keys(card_cvv)
         cc_postal_code_box.send_keys(card_postal_code)
         expiry_month_select.select_by_value(card_month)
-        expiry_year_select.select_by_value(card_year)
+        expiry_year_select.select_by_value("20" + card_year)
 
         # sends in the order
         complete_order_button = wait.until(
@@ -383,12 +401,14 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
 
         complete_order_button.click()
 
-        time.sleep(0.5)
+        time.sleep(1)
         wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
         time.sleep(0.5)
         wait.until(
             EC.visibility_of_element_located((By.XPATH, "//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'feedback')]"))
         )
+
+        time.sleep(2)
 
         print("burger ordered")
         return ("burger ordered", 200)
