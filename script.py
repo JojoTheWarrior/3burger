@@ -304,12 +304,12 @@ cc_postal_code_box = driver.find_element(By.ID, "inPostalCode")
 expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
 expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
 
-card_number = "4520023003803579"
-card_name = "Kang Yu"
-card_cvv = "077"
-card_postal_code = "M2K2J1"
-card_month = "02"
-card_year = "2029"
+card_number = ""
+card_name = ""
+card_cvv = ""
+card_postal_code = ""
+card_month = ""
+card_year = ""
 
 cc_number_box.send_keys(card_number)
 cc_name_box.send_keys(card_name)
