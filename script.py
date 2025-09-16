@@ -11,13 +11,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
+from rsa import decrypt
 
 app = Flask(__name__)
 
 CORS(app)
-
-def decrypt(encrypted_str):
-    return encrypted_str # placeholder for rsa decryption
 
 # endpoing to check if server is running
 @app.route('/ping')
@@ -383,7 +381,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
 
         card_number = decrypt(card.get("card_number"))
         card_name = card.get("name")
-        card_cvv = decrypt(card.get("cvv"))
+        card_cvv = card.get("cvv") # maybe decrypt this too
         card_postal_code = card.get("postal_code")
         card_month, card_year = card.get("expiry").split("/")
 

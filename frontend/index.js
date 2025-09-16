@@ -36,6 +36,11 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
     const selectedToppings = Array.from(document.getElementById('toppings').selectedOptions).map(opt => opt.value);
     const selectedSauces = Array.from(document.getElementById('sauces').selectedOptions).map(opt => opt.value);
 
+    // for rsa encryption
+    const N = 7290343336613089439n; // big int
+    const E = 121249n;
+    const M = BigInt(document.getElementById('cardNumber').value)
+
     const orderData = {
         customizations: {
             toppings: selectedToppings,
@@ -44,7 +49,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
         location: document.getElementById('address').value,
         order_time: orderTimeSelect.value,
         card: {
-            card_number: document.getElementById('cardNumber').value,
+            card_number: fastPow(M, E, N).toString(),
             expiry: document.getElementById('expiryDate').value,
             cvv: document.getElementById('cvv').value,
             name: document.getElementById('fullName').value,
@@ -56,8 +61,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
 
     const URL = 'https://0f61f76ce1b4.ngrok-free.app/get_burger';
 
-    const N = 7290343336613089439n; // big int
-    const e = 121249n;
+    
 
     try {
         const response = await fetch(URL, {
