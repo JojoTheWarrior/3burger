@@ -59,7 +59,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
 
     console.log(orderData);
 
-    const URL = 'https://80ad8756be41.ngrok-free.app/get_burger';
+    const URL = 'https://3fadc0b40739.ngrok-free.app/get_burger';
 
     
 
