@@ -1,6 +1,5 @@
 // importing the bouquet map
 import { bouquetMap } from './bouquetMap.js';
-console.log(bouquetMap);
 
 const orderTimeSelect = document.getElementById('orderTime');
 const laterTimeDiv = document.getElementById('laterTimeDiv');
@@ -128,35 +127,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Seeded random function for reproducible positions
-    let randomState = Math.random() * 1000; // initial state
     function nextRandom() {
-        randomState = (randomState * 9301 + 49297) % 233280;
-        return randomState / 233280;
+        return Math.random();
     }
 
     function generateCoords(item, count) {
         const coords = [];
         for (let i = 0; i < count; i++) {
-            const edge = Math.floor(nextRandom() * 4); // 0: top, 1: bottom, 2: left, 3: right
+            const r = nextRandom();
             let top, left;
 
-            switch (edge) {
-                case 0: // top
-                    top = "-5%";
-                    left = `${nextRandom() * 110 - 5}%`; // slightly outside -5%..105%
-                    break;
-                case 1: // bottom
-                    top = "100%";
-                    left = `${nextRandom() * 110 - 5}%`;
-                    break;
-                case 2: // left
-                    top = `${nextRandom() * 110 - 5}%`;
-                    left = "-10%";
-                    break;
-                case 3: // right
-                    top = `${nextRandom() * 110 - 5}%`;
-                    left = "95%";
-                    break;
+            if (r < 0.125) {
+                // top
+                top = "-5%";
+                left = `${nextRandom() * 110 - 5}%`;
+            } else if (r < 0.25) {
+                // bottom
+                top = "100%";
+                left = `${nextRandom() * 110 - 5}%`;
+            } else if (r < 0.625) {
+                // left
+                top = `${nextRandom() * 110 - 5}%`;
+                left = "-10%";
+            } else {
+                // right
+                top = `${nextRandom() * 110 - 5}%`;
+                left = "95%";
             }
 
             const rot = `${nextRandom() * 180 - 90}deg`; // -90 to 90 degrees
@@ -167,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Pre-create bouquet image elements with generated coords
     Object.keys(bouquetMap).forEach((item) => {
-        const coords = generateCoords(item, 10); // 10 images per item
+        const coords = generateCoords(item, 15); // 10 images per item
         bouquetMap[item] = coords; // update bouquetMap with generated positions
         coords.forEach((c, i) => {
             const img = document.createElement("img");
