@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import random
 from rsa import decrypt
+import os
 
 app = Flask(__name__)
 
@@ -72,6 +73,7 @@ def get_human_like_options():
     options.add_argument("--disable-infobars")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-extensions")
+    options.add_argument(f"--user-data-dir=/tmp/selenium_{os.getpid()}")
     
     # Fake a random but valid user-agent
     user_agents = [
