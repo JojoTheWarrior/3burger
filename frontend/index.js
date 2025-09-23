@@ -59,13 +59,13 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
         },
         location: document.getElementById('address').value,
         order_time: orderTimeSelect.value,
+        pickup_name: document.getElementById('pickup-name').value,
         card: {
             card_number: fastPow(M, E, N).toString(),
             expiry: document.getElementById('expiryDate').value,
             cvv: document.getElementById('cvv').value,
             name: document.getElementById('fullName').value,
             postal_code: document.getElementById('postalCode').value,
-            pickup_name: "joshua"
         }
     };
 
