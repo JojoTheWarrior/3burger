@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvey's Order Form</title>
+    <title>3BURGER - Unlimited $3 Harvey's Burgers</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<header>Harvey's Order Form</header>
+<div id="navbar">
+    <header id="burger-title">3<span>BURGER</span></header>
+    <h1 id="slogan"><span class="gradient-text">Unlimited</span> $3 Harvey's Burgers</h1>
+</div>
+
 <main>
     <form id="orderForm">
         <label for="address">Delivery Address</label>
@@ -52,6 +56,9 @@
             <select id="laterTime" name="laterTime"></select>
         </div>
 
+        <label for="pickup-name">Pickup Name</label>
+        <input type="text" id="pickup-name" name="pickup-name" placeholder="John Doe">
+
         <div class="credit-card-section">
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" placeholder="John Doe">
@@ -71,6 +78,8 @@
 
         <button type="submit">Place Order</button>
     </form>
+    <!--bouquet layer-->
+    <div id="bouquet-layer"></div>
 </main>
 
 <div id="orderPlaced" style="display:none;">
@@ -81,6 +90,6 @@
 </div>
 
 <!-- external js -->
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
 </body>
 </html>

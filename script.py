@@ -52,8 +52,14 @@ def get_burger():
     card = data.get("card", {})
     if not isinstance(card, dict):
         return jsonify({"error": "card must be a dictionary"}), 400
+    
+    # pickup name
+    pickup_name = data.get("pickup_name")
+    if not isinstance(pickup_name, str):
+        return jsonify({"error": "pickup_name must be a string"}), 400
 
-    run_selenium_task(toppings, sauces, location, order_time, card)
+    return run_selenium_task(toppings, sauces, location, order_time, card)
+
     
 
 # for more user-like movements
@@ -81,7 +87,7 @@ def get_human_like_options():
 
     return options
 
-def run_selenium_task(toppings, sauces, location, order_time, card):
+def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name):
     try:
         # testing card decryption
         card_month, card_year = card.get("expiry").split("/")
@@ -123,7 +129,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card):
         pw_2_box.send_keys("sexyharveys1")
 
         # extracting full name from card
-        first_name_box.send_keys(card.get("name"))
+        first_name_box.send_keys(pickup_name)
 
         last_name_box.send_keys(f"The Harvey's Lover")
         phone_box.send_keys("1234567890")
