@@ -58,7 +58,7 @@ def get_burger():
     if not isinstance(pickup_name, str):
         return jsonify({"error": "pickup_name must be a string"}), 400
 
-    return run_selenium_task(toppings, sauces, location, order_time, card)
+    return run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
 
     
 
