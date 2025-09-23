@@ -36,8 +36,16 @@ function fastPow(base, expo, mdl){
 document.getElementById('orderForm').addEventListener('submit', async e => {
     e.preventDefault();
 
-    const selectedToppings = Array.from(document.getElementById('toppings').selectedOptions).map(opt => opt.value);
-    const selectedSauces = Array.from(document.getElementById('sauces').selectedOptions).map(opt => opt.value);
+    // const selectedToppings = Array.from(document.getElementById('toppings').selectedOptions).map(opt => opt.value);
+    // const selectedSauces = Array.from(document.getElementById('sauces').selectedOptions).map(opt => opt.value);
+
+    const getCheckedValues = (containerId) => {
+        return Array.from(document.querySelectorAll(`#${containerId} input[type="checkbox"]:checked`))
+                .map(input => input.value);
+    }
+    const selectedToppings = getCheckedValues('toppings');
+    const selectedSauces = getCheckedValues('sauces');
+    console.log(selectedToppings, selectedSauces);
 
     // for rsa encryption
     const N = 7290343336613089439n; // big int
@@ -64,8 +72,6 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
     console.log(orderData);
 
     const URL = 'https://3fadc0b40739.ngrok-free.app/get_burger';
-
-    
 
     try {
         const response = await fetch(URL, {
@@ -102,6 +108,7 @@ function showOrderPlaced() {
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.querySelector("main");
     let bouquetLayer = document.getElementById("bouquet-layer");
+    
     if (!bouquetLayer) {
         bouquetLayer = document.createElement("div");
         bouquetLayer.id = "bouquet-layer";
@@ -188,7 +195,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateBouquet(selectId) {
         const select = document.getElementById(selectId);
         select.addEventListener("change", () => {
-            const selected = Array.from(select.selectedOptions).map((o) => o.value);
+            const selected = Array.from(document.querySelectorAll(`input[type="checkbox"]:checked`))
+                    .map(input => input.value);
+            
             bouquetLayer.querySelectorAll(".bouquet-img").forEach((img) => {
                 if (img.dataset.item in bouquetMap) {
                     if (selected.includes(img.dataset.item)) {

@@ -87,10 +87,82 @@ input:focus, select:focus, textarea:focus {
   box-shadow: 0 0 5px var(--theme-orange);
 }
 
-select[multiple] {
-  height: auto; /* auto-size to show all elements */
+/* for the customizations */
+.section-title {
+  display: block;
+  background: var(--theme-orange, #ff7b00);
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px 6px 0 0;
+  margin-top: 1.5rem;
 }
 
+.customizations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--theme-black-light, #1a1a1a);
+  border: 2px solid var(--theme-orange, #ff7b00);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.customizations label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--theme-black-light, #1a1a1a);
+  border: 2px solid var(--theme-orange, #ff7b00);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+
+/* Hide the default ugly checkbox */
+.customizations input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--theme-orange, #ff7b00);
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+}
+
+.customizations input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 0.75rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+}
+
+.customizations input[type="checkbox"]:checked {
+  background: var(--theme-orange, #ff7b00);
+  border-color: var(--theme-orange, #ff7b00);
+}
+
+.customizations label:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 123, 0, 0.3);
+}
+
+.customizations input[type="checkbox"]:checked + span {
+  font-weight: bold;
+}
+
+/* credit card section */
 .credit-card-section {
   margin-top: 2rem;
 }
@@ -225,33 +297,38 @@ main {
 .bouquet-img {
   position: absolute;
   width: 100px; /* adjust as needed */
-  transform: scale(0.2) rotate(var(--rot, 0));
   opacity: 0;
-  transition: transform 0.8s cubic-bezier(0.68,-0.55,0.27,1.55),
-              opacity 0.8s ease;
-  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4)); /* fainter aura */
+  transform: scale(0.2) rotate(-30deg); /* small + angled when hidden */
+  transition: 
+    opacity 0.6s ease,
+    transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* elastic zoom/rotate */
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.4));
+  pointer-events: none; /* don't block hover when invisible */
 }
 
 /* Active bouquet images */
 .bouquet-img.active {
   opacity: 1;
-  transform: scale(1) rotate(var(--rot, 0));
+  transform: scale(1) rotate(var(--rot));
   z-index: 2;
+  pointer-events: auto;
 
-  /* Smooth looping float */
+  /* floating animation */
   animation: float 5s infinite alternate cubic-bezier(0.4,0,0.6,1);
 }
 
-/* Hover effect: grow 10% */
+/* Hover effect: grow + slight tilt */
 .bouquet-img.active:hover {
-  transform: scale(1.1) rotate(var(--rot, 0));
+  animation-play-state: paused; /* pause float on hover */
+  transform: scale(1.1) rotate(calc(var(--rot) + 5deg));
 }
 
-/* Keyframes for smooth up-and-down motion */
+/* Keyframes for smooth up-and-down float */
 @keyframes float {
-  0%   { transform: translateY(0px) rotate(var(--rot)); }
-  25%  { transform: translateY(-5px) rotate(var(--rot)); }
-  50%  { transform: translateY(0px) rotate(var(--rot)); }
-  75%  { transform: translateY(5px) rotate(var(--rot)); }
-  100% { transform: translateY(0px) rotate(var(--rot)); }
+  0%   { transform: translateY(0px) scale(1) rotate(var(--rot)); }
+  25%  { transform: translateY(-5px) scale(1) rotate(var(--rot)); }
+  50%  { transform: translateY(0px) scale(1) rotate(var(--rot)); }
+  75%  { transform: translateY(5px) scale(1) rotate(var(--rot)); }
+  100% { transform: translateY(0px) scale(1) rotate(var(--rot)); }
 }
+
