@@ -65,7 +65,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
             cvv: document.getElementById('cvv').value,
             name: document.getElementById('fullName').value,
             postal_code: document.getElementById('postalCode').value,
-            pickup_name: document.getElementById('pickup-name').value
+            pickup_name: "joshua"
         }
     };
 
