@@ -88,16 +88,16 @@ def get_human_like_options():
     return options
 
 def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name):
+    driver = webdriver.Chrome(options=get_human_like_options())
+
+    driver.get("https://order.harveys.ca/login")
+
+    wait = WebDriverWait(driver, 20)
+    
     try:
         # testing card decryption
         card_month, card_year = card.get("expiry").split("/")
         print(f"card month {card_month}, card year {card_year}")
-
-        driver = webdriver.Chrome(options=get_human_like_options())
-
-        driver.get("https://order.harveys.ca/login")
-
-        wait = WebDriverWait(driver, 20)
 
         wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
