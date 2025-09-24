@@ -48,10 +48,10 @@ sign_up_button.click()
 
 # filling out the form
 email_number = 0
-with open("email_number.txt", "r") as file:
+with open("quick_email_number.txt", "r") as file:
     email_number = int(file.read().strip())
 print(email_number)
-with open("email_number.txt", "w") as file:
+with open("quick_email_number.txt", "w") as file:
     file.write(str(email_number + 1))
 
 time.sleep(3) # just to be safe
@@ -100,14 +100,14 @@ ok_button.click()
 time.sleep(1.5)
 
 location_bar = driver.find_element(By.CSS_SELECTOR, 'input.autocomplete')
-location_bar.send_keys("3343 Bayview Avenue")
+location_bar.send_keys("170 University Avenue")
 
 time.sleep(1.5)
 
 # decide if we're going to 3343 bayview avenue or 2555 victoria park avenue
 restaurant_button = driver.find_element(
     By.XPATH,
-    '//div[strong[text()="3343 Bayview Avenue"]]'
+    '//div[strong[text()="170 University Avenue"]]'
 )
 restaurant_button.click()
 
@@ -140,7 +140,7 @@ save_order_setup.click()
 wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 time.sleep(0.5)
 
-add_coupon_code = driver.find_element("xpath", "//a[contains(normalize-space(.), '+ Add Coupon Code')]")
+add_coupon_code = driver.find_element("xpath", "//a[contains(normalize-space(.), 'Add Coupon Code')]")
 add_coupon_code.click()
 
 time.sleep(0.5)
@@ -188,7 +188,7 @@ jamieson_toppings = ["Shredded Lettuce", "Onions", "Pickles"]
 raymond_toppings = ["Shredded Lettuce", "Tomatoes", "Pickles", "Black Olives", "Cucumbers"]
 will_toppings = ["Shredded Lettuce", "Onions"]
 
-for topping in jeremy_toppings:
+for topping in toppings:
     topping_button = wait.until(
         EC.element_to_be_clickable((
             By.XPATH,
@@ -224,7 +224,7 @@ will_sauces = ["Ghost Pepper Mayo", "Harv Sauce", "Ketchup"]
 # if random.random() < (1.0 / 6.0):
 #    sauces.append("Ghost Pepper Mayo")
 
-for sauce in jeremy_sauces:
+for sauce in sauces:
     sauce_button = wait.until(
         EC.element_to_be_clickable((
             By.XPATH,
