@@ -73,7 +73,6 @@ def get_human_like_options():
     options.add_argument("--disable-infobars")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-extensions")
-    options.add_argument(f"--user-data-dir=/tmp/selenium_{os.getpid()}")
     
     # Fake a random but valid user-agent
     user_agents = [
@@ -81,11 +80,12 @@ def get_human_like_options():
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     ]
-    # options.add_argument(f"user-agent={random.choice(user_agents)}")
+    options.add_argument(f"user-agent={random.choice(user_agents)}")
 
     # No automation flag in JS
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
+    options.add_argument("--incognito")
 
     return options
 
@@ -417,11 +417,11 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
         time.sleep(2)
 
         print("burger ordered")
-        return ("burger ordered", 200)
+        return jsonify({"ok": True, "message": "burger ordered"}), 200
     
     except Exception as e:
         print(f"smth went wrong {e}")
-        return ("smth went wrong", 500)
+        return jsonify({"ok": False, "error": "smth went wrong"}), 500
 
     finally:
         driver.quit()
