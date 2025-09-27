@@ -34,7 +34,8 @@ def __set_progress(job_id, **kwargs):
         }
 
 def progress_step(job_id, stage, percent, message):
-    _set_progress()
+    pass
+    # _set_progress()
 
 app = Flask(__name__)
 
