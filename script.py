@@ -14,6 +14,28 @@ import random
 from rsa import decrypt
 import os
 
+# for job + polling
+import threading, uuid, time
+
+PROGRESS = {} # job_id -> dictionary {stage, percent, message, done, ok}
+RESULTS = {} # job_id -> any final messages
+_PROG_LOCK = threading.Lock()
+
+def __set_progress(job_id, **kwargs):
+    with _PROG_LOCK:
+        PROGRESS[job_id] = {
+            **PROGRESS.get(job_id, {
+                "percent": 0,
+                "stage": "starting",
+                "message": "harveys page starting",
+                "done": False,
+                "ok": None
+            }), **kwargs
+        }
+
+def progress_step(job_id, stage, percent, message):
+    _set_progress()
+
 app = Flask(__name__)
 
 CORS(app)
@@ -85,7 +107,7 @@ def get_human_like_options():
     # No automation flag in JS
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
-    options.add_argument("--incognito")
+    options.add_argument("--incognito") # so that each tab is fresh
 
     return options
 

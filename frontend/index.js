@@ -35,6 +35,7 @@ function fastPow(base, expo, mdl){
 // Form submission
 document.getElementById('orderForm').addEventListener('submit', async e => {
     e.preventDefault();
+    showOrderPlaced();
 
     // const selectedToppings = Array.from(document.getElementById('toppings').selectedOptions).map(opt => opt.value);
     // const selectedSauces = Array.from(document.getElementById('sauces').selectedOptions).map(opt => opt.value);
@@ -83,7 +84,6 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
         });
         const data = await response.json();
         console.log(data);
-        showOrderPlaced();
     } catch (err) {
         console.error('Error placing order:', err);
         alert('Failed to place order.');
