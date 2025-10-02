@@ -91,6 +91,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
 });
 
 function showOrderPlaced() {
+    /*
     const overlay = document.getElementById('orderPlaced');
     const progressBar = document.getElementById('progressBar');
     overlay.style.display = 'flex';
@@ -104,6 +105,7 @@ function showOrderPlaced() {
             progressBar.style.width = width + '%';
         }
     }, 1000);
+    */
 }
 
 // bouquet layer logic
