@@ -74,7 +74,7 @@ document.getElementById('orderForm').addEventListener('submit', async e => {
 
     // for local testing
     // const URL 
-    const URL = 'https://55bcaf1ce79f.ngrok-free.app/get_burger';
+    const URL = 'https://5b62d66a5ec8.ngrok-free.app/get_burger';
 
     try {
         const response = await fetch(URL, {
