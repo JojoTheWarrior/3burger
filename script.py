@@ -46,6 +46,26 @@ CORS(app)
 def ping():
     return jsonify({"status": "ok"}), 200
 
+"""
+example request
+{
+    "customizations": {
+        "toppings": ["Shredded Lettuce", "Onions", "Pickles", "Hot Peppers", "Jalapeños", "Black Olives", "Salt & Pepper"],
+        "sauces": ["Chipotle"]
+    },
+    "location": "170 University Avenue W",
+    "order_time": "now",
+    "card": {
+       "card_number": "4111111111111111",
+        "expiry": "02/28",
+        "cvv": "123",
+        "name": "Joshua Wang",
+        "postal_code": "M2K 2J1"
+    },
+    "pickup_name": "Joshua"
+}
+"""
+
 # endpoint to trigger task
 @app.route('/get_burger', methods=['POST'])
 def get_burger():

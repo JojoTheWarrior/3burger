@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+import os
+
 def bezout(a, b):
     if a == 0:
         return (0, 1)
@@ -13,11 +16,18 @@ def fastPow(base, exp, mdl):
         exp >>= 1
     return ret
 
-def decrypt(encrypted_str):
-    p = 1000000009
-    q = 7290343271
-    tot_n = 7290343328322746160
-    n = p * q
-    d = 4993249937736084049
+# finding rsa variables
+load_dotenv()
 
-    return fastPow(int(encrypted_str), d, n)
+P = int(os.getenv("PRIME_P"))
+Q = int(os.getenv("PRIME_Q"))
+N = P*Q
+TOTIENT = (P-1)*(Q-1)
+E = 2
+while sum(x * y for x, y in zip(bezout(TOTIENT, E), (TOTIENT, E))) != 1:
+    E += 1
+D = bezout(TOTIENT, E)[1]
+
+def decrypt(encrypted_str):
+    return fastPow(int(encrypted_str), D, N)
+
