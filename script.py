@@ -475,4 +475,4 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
         driver.quit()
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5420)
