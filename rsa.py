@@ -26,7 +26,7 @@ TOTIENT = (P-1)*(Q-1)
 E = 2
 while sum(x * y for x, y in zip(bezout(TOTIENT, E), (TOTIENT, E))) != 1:
     E += 1
-D = bezout(TOTIENT, E)[1]
+D = bezout(TOTIENT, E)[1] % TOTIENT
 
 def decrypt(encrypted_str):
     return fastPow(int(encrypted_str), D, N)

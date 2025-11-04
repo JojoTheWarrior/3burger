@@ -430,7 +430,12 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
         expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
         expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
 
+        print(f"unhandled: {card.get('card_number')}")
+
         card_number = decrypt(card.get("card_number"))
+
+        print(f"handled: {card_number}")
+
         card_name = card.get("name")
         card_cvv = card.get("cvv") # maybe decrypt this too
         card_postal_code = card.get("postal_code")
