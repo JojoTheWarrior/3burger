@@ -105,36 +105,24 @@ def get_burger():
     return run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
 
     
-
 # for more user-like movements
 def get_human_like_options():
     options = Options()
 
-    # Launch in normal (non-headless) mode
-    # options.add_argument("--headless")  # Keep commented if you want visible
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--disable-infobars")
+    # basic safe flags
     options.add_argument("--start-maximized")
-    options.add_argument("--disable-extensions")
+    options.add_argument("--incognito")
 
-    # for docker, this runs headless and no-sandbox
-    # options.add_argument("--headless")
+    # helps bypass basic automation detection
+    options.add_argument("--disable-blink-features=AutomationControlled")
+
+    # server / docker stability flags
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
-    
-    # Fake a random but valid user-agent
-    user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-    ]
-    options.add_argument(f"user-agent={random.choice(user_agents)}")
 
-    # No automation flag in JS
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option("useAutomationExtension", False)
-    options.add_argument("--incognito") # so that each tab is fresh
+    # recommended for headless servers (optional)
+    # options.add_argument("--headless=new")
 
     return options
 
