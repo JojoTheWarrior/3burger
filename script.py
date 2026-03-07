@@ -9,6 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import random
 from rsa import decrypt
@@ -127,8 +128,10 @@ def get_human_like_options():
     return options
 
 def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name):
-    driver = webdriver.Chrome(options=get_human_like_options())
-
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()),
+        options=get_human_like_options()
+    )
     driver.get("https://order.harveys.ca/login")
 
     wait = WebDriverWait(driver, 20)
