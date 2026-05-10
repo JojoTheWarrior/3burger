@@ -459,7 +459,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
             EC.visibility_of_element_located((By.XPATH, "//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'feedback')]"))
         )
 
-        time.sleep(2)
+        time.sleep(20)
 
         print("burger ordered")
         return jsonify({"ok": True, "message": "burger ordered"}), 200

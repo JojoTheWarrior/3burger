@@ -90,13 +90,13 @@ ok_button.click()
 time.sleep(1.5)
 
 location_bar = driver.find_element(By.CSS_SELECTOR, 'input.autocomplete')
-location_bar.send_keys("170 University Avenue")
+location_bar.send_keys("3343 Bayview Avenue")
 
 time.sleep(1.5)
 
 restaurant_button = driver.find_element(
     By.XPATH,
-    '//div[strong[text()="170 University Avenue"]]'
+    '//div[strong[text()="3343 Bayview Avenue"]]'
 )
 restaurant_button.click()
 
