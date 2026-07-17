@@ -26,236 +26,380 @@ driver = webdriver.Chrome(
     service=Service(ChromeDriverManager().install()),
     options=get_human_like_options()
 )
-
 driver.get("https://order.harveys.ca/login")
 
 wait = WebDriverWait(driver, 20)
 
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+data = {
+    "customizations": {
+        "toppings": [
+            "Shredded Lettuce",
+            "Onions",
+            "Pickles",
+            "Relish",
+            "Tomatoes",
+            "Salt & Pepper"
+        ],
+        "sauces": ["Chipotle"]
+    },
+    "location": "3343 Bayview Avenue",
+    "order_time": "now",
+    "card": {
+        "card_number": "4506445836061588",
+        "expiry": "09/28",
+        "cvv": "788",
+        "name": "Joshua Wang",
+        "postal_code": "M2K 2J1"
+    },
+    "pickup_name": "Jeremy"
+}
 
-# signing up
-sign_up_button = driver.find_element(By.ID, "btnSignup")
-sign_up_button.click()
+# extracting parameters - with proper type checks
+customizations = data.get("customizations", {})
 
-# filling out the form
-email_number = 0
-with open("quick_email_number.txt", "r") as file:
-    email_number = int(file.read().strip())
+toppings = customizations.get("toppings", [])
+sauces = customizations.get("sauces", [])
 
-print(email_number)
+# location and order time
+location = data.get("location")
+order_time = data.get("order_time")
 
-with open("quick_email_number.txt", "w") as file:
-    file.write(str(email_number + 1))
+# card info
+card = data.get("card", {})
 
-time.sleep(3)
+# pickup name
+pickup_name = data.get("pickup_name")
 
-print("we're good now")
+try:
+    # testing card decryption
+    card_month, card_year = card.get("expiry").split("/")
+    print(f"card month {card_month}, card year {card_year}")
 
-email_box = driver.find_element(By.ID, "inEmail")
-pw_box = driver.find_element(By.ID, "inPassword")
-pw_2_box = driver.find_element(By.ID, "inVerifyPassword")
-first_name_box = driver.find_element(By.ID, "inFirstName")
-last_name_box = driver.find_element(By.ID, "inLastName")
-phone_box = driver.find_element(By.ID, "inPhone")
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
-email_box.send_keys(f"joshua.wang{email_number}@gmail.com")
-pw_box.send_keys("jojothewarrior1")
-pw_2_box.send_keys("jojothewarrior1")
-first_name_box.send_keys("Joshua")
-last_name_box.send_keys("The Harvey's Lover")
-phone_box.send_keys("1234567890")
+    # signing up
+    sign_up_button = driver.find_element(By.ID, "btnSignup")
+    sign_up_button.click()
 
-time.sleep(0.5)
+    # filling out the form
+    email_number = 0
+    with open("email_number.txt", "r") as file:
+        email_number = int(file.read().strip())
+    print(email_number)
+    with open("email_number.txt", "w") as file:
+        file.write(str(email_number + 1))
 
-sign_up_button = driver.find_elements(By.XPATH, "//button[contains(normalize-space(.), 'Sign Up')]")[1]
+    time.sleep(3) # just to be safe
 
-time.sleep(0.5)
-sign_up_button.click()
+    print("we're good now")
 
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+    email_box = driver.find_element(By.ID, "inEmail")
+    pw_box = driver.find_element(By.ID, "inPassword") 
+    pw_2_box = driver.find_element(By.ID, "inVerifyPassword")
+    first_name_box = driver.find_element(By.ID, "inFirstName")
+    last_name_box = driver.find_element(By.ID, "inLastName")
+    phone_box = driver.find_element(By.ID, "inPhone")
 
-# navigating to coupons
-coupon_button = driver.find_element(By.LINK_TEXT, "Coupons")
-coupon_button.click()
+    email_box.send_keys(f"theharveyslover{email_number}@gmail.com")
+    pw_box.send_keys("sexyharveys1")
+    pw_2_box.send_keys("sexyharveys1")
 
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+    # extracting full name from card
+    first_name_box.send_keys(pickup_name)
 
-time.sleep(1)
+    last_name_box.send_keys(f"The Harvey's Lover")
+    phone_box.send_keys("1234567890")
 
-ok_button = driver.find_elements(By.XPATH, '//button[text()="Ok"]')[4]
-ok_button.click()
-
-time.sleep(1.5)
-
-location_bar = driver.find_element(By.CSS_SELECTOR, 'input.autocomplete')
-location_bar.send_keys("3343 Bayview Avenue")
-
-time.sleep(1.5)
-
-restaurant_button = driver.find_element(
-    By.XPATH,
-    '//div[strong[text()="3343 Bayview Avenue"]]'
-)
-restaurant_button.click()
-
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
-
-takeout_option = driver.find_element(By.XPATH, '//select[@class="secret"]/option[normalize-space()="Takeout"]')
-takeout_option.click()
-
-time.sleep(1)
-
-save_order_setup = driver.find_element(By.XPATH, "//button[contains(normalize-space(.), 'Save Order Setup')]")
-save_order_setup.click()
-
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
-time.sleep(0.5)
-
-add_coupon_code = driver.find_element(By.XPATH, "//a[contains(normalize-space(.), 'Add Coupon Code')]")
-add_coupon_code.click()
-
-time.sleep(0.5)
-
-coupon_code = driver.find_element(By.ID, "inCouponCode")
-coupon_code.send_keys("3BURGER")
-
-time.sleep(0.5)
-
-add_coupon = driver.find_element(By.XPATH, "//button[contains(normalize-space(.), 'Add Coupon')]")
-add_coupon.click()
-
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
-
-use_coupon = driver.find_element(By.XPATH, "//button[contains(normalize-space(.), 'Use Coupon')]")
-use_coupon.click()
-
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
-
-original_burger = driver.find_element(
-    By.XPATH,
-    "//div[contains(@class, 'option-element') and .//label[@title='Original Burger']]"
-)
-original_burger.click()
-
-time.sleep(0.5)
-
-toppings_div = wait.until(
-    EC.element_to_be_clickable(
-        (By.XPATH, "//div[@id='toppingSelect']//div[contains(@class,'heading') and .//h4[text()='Toppings']]")
-    )
-)
-toppings_div.click()
-
-time.sleep(1)
-
-toppings = ["Shredded Lettuce", "Onions", "Pickles", "Hot Peppers", "Jalapeños", "Black Olives", "Salt & Pepper"]
-
-for topping in toppings:
-    topping_button = wait.until(
-        EC.element_to_be_clickable((
-            By.XPATH,
-            f"//div[contains(@class,'topping-option')][.//span[contains(normalize-space(text()), '{topping}')]]"
-        ))
-    )
-    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", topping_button)
-    topping_button.click()
     time.sleep(0.5)
 
-time.sleep(0.5)
+    sign_up_button = (driver.find_elements("xpath", "//button[contains(normalize-space(.), 'Sign Up')]"))[1]
 
-sauces_div = wait.until(
-    EC.element_to_be_clickable(
-        (By.XPATH, "//div[@id='toppingSelect']//div[contains(@class,'heading') and .//h4[text()='Sauces']]")
+    time.sleep(0.5)
+    sign_up_button.click()
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    # navigating to coupons
+    coupon_button = driver.find_element(By.LINK_TEXT, "Coupons")
+    coupon_button.click()
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    # wait for "ok" button to pop up
+
+    time.sleep(1)
+
+    ok_button = (driver.find_elements(By.XPATH, '//button[text()="Ok"]'))[4]
+    ok_button.click()
+
+    time.sleep(1.5)
+
+    location_bar = driver.find_element(By.CSS_SELECTOR, 'input.autocomplete')
+    location_bar.send_keys(location)
+
+    time.sleep(1.5)
+
+    # decide if we're going to 3343 bayview avenue or 2555 victoria park avenue or 170 University Avenue West
+    restaurant_inputs = wait.until(
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#autocomplete-list > div"))
     )
-)
-driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", sauces_div)
-sauces_div.click()
 
-time.sleep(1)
+    print(f"restaurants found ${restaurant_inputs}")
+    try:
+        restaurant_inputs[0].click()
+    except Exception as e:
+        print("couldn't find restaurant")
 
-sauces = ["Chipotle"]
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
-for sauce in sauces:
-    sauce_button = wait.until(
-        EC.element_to_be_clickable((
-            By.XPATH,
-            f"//div[@id='config2']//div[contains(@class, 'topping-option')][.//span[normalize-space(text())='{sauce}']]"
-        ))
-    )
-    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", sauce_button)
-    sauce_button.click()
+    # you need this for bayview, though
+    try:
+        takeout_option = driver.find_element(By.XPATH, '//select[@class="secret"]/option[normalize-space()="Takeout"]')
+        takeout_option.click()
+    except Exception as e:
+        print("i guess no takeout option")
+
+    time.sleep(1)
+
+    # selects order later
+    if order_time != "now":
+        try:
+            later_label = wait.until(
+                EC.element_to_be_clickable((By.XPATH, "//label[normalize-space(text())='Later']"))
+            )
+            later_label.click()
+
+            time_later = Select(driver.find_element(By.ID, "inTime"))
+            time_later.select_by_value(order_time) # such as 20:30
+        except Exception as e:
+            print("defaulting to ordering now")
+
+    # saves order setup
+    save_order_setup = driver.find_element("xpath", "//button[contains(normalize-space(.), 'Save Order Setup')]")
+    save_order_setup.click()
+
+    # go to add coupon code page
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
     time.sleep(0.5)
 
-time.sleep(0.5)
+    add_coupon_code = driver.find_element("xpath", "//a[contains(normalize-space(.), '+ Add Coupon Code')]")
+    add_coupon_code.click()
 
-continue_button = driver.find_element(By.XPATH, '//button[@alt="Continue"]')
-continue_button.click()
+    time.sleep(0.5)
 
-time.sleep(0.5)
+    coupon_code = driver.find_element(By.ID, "inCouponCode")
+    coupon_code.send_keys("3BURGER")
 
-add_to_cart_button = driver.find_element(By.XPATH, '//button[@alt="Add to Cart"]')
-add_to_cart_button.click()
+    time.sleep(0.5)
 
-time.sleep(0.5)
+    add_coupon = driver.find_element(By.XPATH, "//button[contains(normalize-space(.), 'Add Coupon')]")
+    add_coupon.click()
 
-view_cart_button = wait.until(
-    EC.element_to_be_clickable((By.XPATH, '//button[normalize-space()="View cart"]'))
-)
-view_cart_button.click()
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+    use_coupon = driver.find_element(By.XPATH, "//button[contains(normalize-space(.), 'Use Coupon')]")
+    use_coupon.click()
 
-checkout_button = wait.until(
-    EC.element_to_be_clickable((By.XPATH, '//button[normalize-space()="Checkout"]'))
-)
-checkout_button.click()
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
 
-time.sleep(0.5)
-wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+    original_burger = driver.find_element(
+        "xpath",
+        "//div[contains(@class, 'option-element') and .//label[@title='Original Burger']]"
+    )
+    original_burger.click()
+    time.sleep(0.5)
 
-confirm_button = driver.find_element(By.XPATH, '//button[normalize-space()="Confirm"]')
-confirm_button.click()
+    toppings_div = wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "//div[@id='toppingSelect']//div[contains(@class,'heading') and .//h4[text()='Toppings']]")
+        )
+    )
+    toppings_div.click()
 
-time.sleep(1)
+    time.sleep(1)
 
-new_cc_radio = wait.until(
-    EC.element_to_be_clickable((By.ID, "inNewCC"))
-)
-new_cc_radio.click()
+    # all toppings are ["Shredded Lettuce", "Onions", "Tomatoes", "Pickles", "Relish", "Hot Peppers", "Jalapeños", "Black Olives", "Cucumbers", "Salt & Pepper"]
+    josh_toppings = ["Shredded Lettuce", "Onions", "Pickles", "Hot Peppers", "Jalapeños", "Black Olives", "Salt & Pepper"]
+    richard_toppings = ["Shredded Lettuce", "Onions", "Pickles", "Cucumbers"]
+    jeremy_toppings = ["Shredded Lettuce", "Pickles", "Onions", "Black Olives", "Salt & Pepper", "Relish"]
+    alex_toppings = ["Shredded Lettuce", "Pickles", "Onions", "Tomatoes"]
+    yoav_toppings = []
+    jamieson_toppings = ["Shredded Lettuce", "Onions", "Pickles"]
+    raymond_toppings = ["Shredded Lettuce", "Tomatoes", "Pickles", "Black Olives", "Cucumbers"]
+    will_toppings = ["Shredded Lettuce", "Onions"]
 
-time.sleep(0.5)
+    for topping in toppings:
+        topping_button = wait.until(
+            EC.element_to_be_clickable((
+                By.XPATH,
+                f"//div[contains(@class,'topping-option')][.//span[contains(normalize-space(text()), '{topping}')]]"
+            ))
+        )
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", topping_button)
+        topping_button.click()
+        time.sleep(0.5) # experimental feature - spending 1/2 second on each topping
 
-cc_number_box = driver.find_element(By.ID, "inCCnumber")
-cc_name_box = driver.find_element(By.ID, "inCCname")
-cc_cvv_box = driver.find_element(By.ID, "inCVVCode")
-cc_postal_code_box = driver.find_element(By.ID, "inPostalCode")
-expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
-expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
+    time.sleep(0.5)
 
-card_number = "4520 0230 0380 3579"
-card_name = "Kang Yu"
-card_cvv = "077"
-card_postal_code = "M2K2J1"
-card_month = "02"
-card_year = "2029"
+    sauces_div = wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "//div[@id='toppingSelect']//div[contains(@class,'heading') and .//h4[text()='Sauces']]")
+        )
+    )
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", sauces_div)
+    sauces_div.click()
 
-cc_number_box.send_keys(card_number)
-cc_name_box.send_keys(card_name)
-cc_cvv_box.send_keys(card_cvv)
-cc_postal_code_box.send_keys(card_postal_code)
-expiry_month_select.select_by_value(card_month)
-expiry_year_select.select_by_value(card_year)
+    time.sleep(1)
 
-complete_order_button = wait.until(
-    EC.element_to_be_clickable((By.XPATH, "//button[normalize-space(text())='Complete Order']"))
-)
+    # all sauces are ["Ketchup", "Mustard", "Mayo", "BBQ Sauce", "Ghost Pepper Mayo", "Chipotle", "Harv Sauce", "Hot Sauce", "Garlic Mayo", "Ranch"]
+    josh_sauces = ["Chipotle"]
+    alex_sauces = ["Harv Sauce", "BBQ Sauce"]
+    richard_sauces = []
+    jeremy_sauces = ["BBQ Sauce", "Mayo", "Chipotle"]
+    yoav_sauces = ["Ketchup"]
+    ryan_sauces = ["Ketchup"]
+    raymond_sauces = ["Ketchup"]
+    will_sauces = ["Ghost Pepper Mayo", "Harv Sauce", "Ketchup"]
 
-complete_order_button.click()
+    # playing russian roulette with ghost pepper sauce - 1/6 chance to add death sauce
+    # if random.random() < (1.0 / 6.0):
+    #    sauces.append("Ghost Pepper Mayo")
 
-time.sleep(15)
+    for sauce in sauces:
+        sauce_button = wait.until(
+            EC.element_to_be_clickable((
+                By.XPATH,
+                f"//div[@id='config2']//div[contains(@class, 'topping-option')][.//span[normalize-space(text())='{sauce}']]"
+            ))
+        )
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", sauce_button)
+        sauce_button.click()
+        time.sleep(0.5) # experimental feature - spending 1/2 second on each sauce
+
+    time.sleep(0.5)
+
+    # clicks "continue"
+    continue_button = driver.find_element(
+        By.XPATH,
+        '//button[@alt="Continue"]'
+    )
+    continue_button.click()
+
+    time.sleep(0.5)
+
+    # clicks "Add to Cart"
+    add_to_cart_button = driver.find_element(
+        By.XPATH,
+        '//button[@alt="Add to Cart"]'
+    )
+    add_to_cart_button.click()
+
+    # clicks "view cart"
+    time.sleep(0.5)
+
+    view_cart_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, '//button[normalize-space()="View cart"]')
+        )
+    )
+    view_cart_button.click()
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    # clicks "checkout"
+
+    checkout_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, '//button[normalize-space()="Checkout"]')
+        )
+    )
+
+    checkout_button.click()
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    # clicks "confirm"
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    try:
+        confirm_button = driver.find_element(By.XPATH, '//button[normalize-space()="Confirm"]')
+        confirm_button.click()
+    except Exception as e:
+        print("i guess no confirm button")
+
+    time.sleep(1)
+
+    time.sleep(0.5)
+
+    # clicks paying option
+    new_cc_radio = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "inNewCC")
+        )
+    )
+    new_cc_radio.click()
+
+    print("clicking payment option went through")
+
+    time.sleep(0.5)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+
+    # fills out card info
+    cc_number_box = driver.find_element(By.ID, "inCCnumber")
+    cc_name_box = driver.find_element(By.ID, "inCCname")
+    cc_cvv_box = driver.find_element(By.ID, "inCVVCode")
+    cc_postal_code_box = driver.find_element(By.ID, "inPostalCode")
+    expiry_month_select = Select(driver.find_element(By.ID, "inExpiryMonth"))
+    expiry_year_select = Select(driver.find_element(By.ID, "inExpiryYear"))
+
+    print(f"unhandled: {card.get('card_number')}")
+
+    # no decryption
+    card_number = card.get("card_number")
+
+    print(f"handled: {card_number}")
+
+    card_name = card.get("name")
+    card_cvv = card.get("cvv") # maybe decrypt this too
+    card_postal_code = card.get("postal_code")
+    card_month, card_year = card.get("expiry").split("/")
+
+    cc_number_box.send_keys(card_number)
+    cc_name_box.send_keys(card_name)
+    cc_cvv_box.send_keys(card_cvv)
+    cc_postal_code_box.send_keys(card_postal_code)
+    expiry_month_select.select_by_value(card_month)
+    expiry_year_select.select_by_value("20" + card_year)
+
+    # sends in the order
+    complete_order_button = wait.until(
+        EC.element_to_be_clickable((By.XPATH, "//button[normalize-space(text())='Complete Order']"))
+    )
+
+    complete_order_button.click()
+
+    time.sleep(1)
+    wait.until(EC.invisibility_of_element_located((By.CLASS_NAME, "spinner-overlay")))
+    time.sleep(0.5)
+    wait.until(
+        EC.visibility_of_element_located((By.XPATH, "//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'feedback')]"))
+    )
+
+    time.sleep(20)
+
+    print("burger ordered")
+
+except Exception as e:
+    print(f"smth went wrong {e}")
+
+finally:
+    driver.quit()
