@@ -1,0 +1,4198 @@
+{
+  "response": {
+    "responseHeader": {
+      "result": "Success",
+      "responseTime": 0.28
+    },
+    "responseContent": {
+      "@class": "storeAllProductRespModel",
+      "businessStatusModel": {
+        "status": "SUCCESS",
+        "screenMsgCode": "",
+        "screenMsg": ""
+      },
+      "categories": [
+        {
+          "categoryID": 14380,
+          "categoryName": "$3 Summer Menu",
+          "subCategories": [
+            {
+              "categoryID": 14381,
+              "categoryName": "$3 Hot Dog",
+              "products": [
+                {
+                  "productID": 127761,
+                  "name": "Grilled Hot Dog",
+                  "sku": "22024011d3har",
+                  "productPrice": 3,
+                  "calories": "340 Cals",
+                  "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 340,
+                  "productSubType": "Hot Dog",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127444,
+                      "name": "Grilled Hot Dog Combo",
+                      "sku": "22026011har",
+                      "productPrice": 8.1,
+                      "calories": "640-1040 Cals",
+                      "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 640,
+                      "productSubType": "Hot Dog",
+                      "showImage": "Y",
+                      "interchangeIDs": "97057,106200",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96982,106080",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 14382,
+              "categoryName": "Jr. Burger",
+              "products": [
+                {
+                  "productID": 128244,
+                  "name": "Jr. Burger",
+                  "sku": "22024024d3har",
+                  "productPrice": 2.99,
+                  "calories": "250 Cals",
+                  "description": "Snack-size version of our famous Original burger and your choice of toppings on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 110,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127315,
+                      "name": "Jr. Burger Combo",
+                      "sku": "22026022har",
+                      "productPrice": 8.09,
+                      "calories": "550-950 Cals",
+                      "description": "The same great taste as Harvey\u0027s famous Original Burger, just in a snack-able size. Served with your choice of a side or a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 550,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "interchangeIDs": "106212,97522",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106092,97516",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 14383,
+              "categoryName": "$3 Shakes",
+              "products": [
+                {
+                  "productID": 127049,
+                  "name": "Regular Vanilla Shake",
+                  "sku": "22074049d3har",
+                  "productPrice": 3,
+                  "calories": "580 Cals",
+                  "description": "Deliciously thick and smooth, handspun vanilla milkshake made using 100% Canadian Dairy. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 580,
+                  "showImage": "Y",
+                  "interchangeIDs": "116736,98113",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127914,
+                  "name": "Regular Chocolate Shake",
+                  "sku": "22074047d3har",
+                  "productPrice": 3,
+                  "calories": "660 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with a rich chocolate syrup. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 660,
+                  "showImage": "Y",
+                  "interchangeIDs": "98107,116730",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128112,
+                  "name": "Regular Strawberry Shake",
+                  "sku": "22074051d3har",
+                  "productPrice": 3,
+                  "calories": "650 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with strawberry syrup. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 650,
+                  "showImage": "Y",
+                  "interchangeIDs": "98119,116742",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128235,
+                  "name": "Regular Orange Cream Shake",
+                  "sku": "22074053d3har",
+                  "productPrice": 3,
+                  "calories": "590 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with orange syrup for a full creamsicle sensation.",
+                  "isVegetarian": false,
+                  "caloriesNum": 590,
+                  "showImage": "Y",
+                  "interchangeIDs": "98125,116748",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128155,
+                  "name": "Salted Caramel Shake Regular",
+                  "sku": "22074221d3har",
+                  "productPrice": 3,
+                  "calories": "650 Cals",
+                  "description": "Blend of our vanilla milkshake base and sweet caramel for a rich, delicious flavour.",
+                  "isVegetarian": false,
+                  "caloriesNum": 650,
+                  "showImage": "Y",
+                  "interchangeIDs": "121871,121829",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 14384,
+              "categoryName": "$3 Frozen Drinks",
+              "products": [
+                {
+                  "productID": 127336,
+                  "name": "Frozen Crush® Cream Soda Regular",
+                  "sku": "22074200d3har",
+                  "productPrice": 3,
+                  "calories": "200 Cals",
+                  "description": "Feelings of nostalgia are sure to hit with this vibrant pink drink made with Crush Cream Soda and crushed ice. 12. oz.\t\t",
+                  "isVegetarian": false,
+                  "caloriesNum": 200,
+                  "showImage": "Y",
+                  "interchangeIDs": "123599,125993",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127552,
+                  "name": "Frozen Crush® Orange Regular",
+                  "sku": "22074210d3har",
+                  "productPrice": 3,
+                  "calories": "210 Cals",
+                  "description": "A brilliant burst of Crush Orange flavour mixed with crushed ice. 12. oz.\t\t",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "showImage": "Y",
+                  "interchangeIDs": "123609,126003",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127683,
+                  "name": "Frozen Brisk Lemonade Regular",
+                  "sku": "22074061d3har",
+                  "productPrice": 3,
+                  "calories": "190 Cals",
+                  "description": "Bold taste of Brisk Lemonade mixed with crushed ice. 12. oz.",
+                  "isVegetarian": false,
+                  "caloriesNum": 190,
+                  "showImage": "Y",
+                  "interchangeIDs": "106737,116817",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127163,
+                  "name": "Frozen Sour Patch Kids Blue Raspberry Regular",
+                  "sku": "22074059d3har",
+                  "productPrice": 3,
+                  "calories": "180 Cals",
+                  "description": "A summer staple, made with crushed ice and blue raspberry flavour. 12. oz.",
+                  "isVegetarian": false,
+                  "caloriesNum": 180,
+                  "showImage": "Y",
+                  "interchangeIDs": "98197,116790",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 14385,
+              "categoryName": "$3 Deep Fried Pickles",
+              "products": [
+                {
+                  "productID": 127596,
+                  "name": "Deep Fried Pickles",
+                  "sku": "22084011d3har",
+                  "productPrice": 3,
+                  "calories": "250 Cals",
+                  "description": "Tangy dill pickle spears, breaded and deep-fried to a golden crisp. Served with a creamy ranch dipping sauce. 4 pc. ",
+                  "isVegetarian": true,
+                  "caloriesNum": 250,
+                  "showImage": "Y",
+                  "interchangeIDs": "106335,96895",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 14386,
+              "categoryName": "$3 Donuts ",
+              "products": [
+                {
+                  "productID": 127662,
+                  "name": "Donuts 8 Pack ",
+                  "sku": "22064002d3har",
+                  "productPrice": 3,
+                  "calories": "720 Cals",
+                  "description": "Hot and fresh mini donuts dusted in cinnamon sugar. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 720,
+                  "showImage": "Y",
+                  "interchangeIDs": "96919,106359",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 3574,
+          "categoryName": "Burgers",
+          "subCategories": [
+            {
+              "categoryID": 4309,
+              "categoryName": "Angus Burger",
+              "products": [
+                {
+                  "productID": 128069,
+                  "name": "Angus Burger with Cheese \u0026 Bacon",
+                  "sku": "22024018d3har",
+                  "productPrice": 10.29,
+                  "calories": "520 Cals",
+                  "description": "Flame-grilled 1/4lb* Angus burger, crispy bacon, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 350,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128154,
+                      "name": "Angus Burger with Cheese \u0026 Bacon Combo",
+                      "sku": "22026017har",
+                      "productPrice": 15.39,
+                      "calories": "820-1220 Cals",
+                      "description": "Flame-grilled 1/4lb* Angus burger, crispy bacon, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 820,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128221,
+                  "name": "Angus Burger with Cheese",
+                  "sku": "22024017d3har",
+                  "productPrice": 8.99,
+                  "calories": "470 Cals",
+                  "description": "Flame-grilled 1/4lb* Angus burger, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 300,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127397,
+                      "name": "Angus Burger with Cheese Combo",
+                      "sku": "22026016har",
+                      "productPrice": 14.09,
+                      "description": "Flame-grilled 1/4lb Angus burger, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127001,
+                  "name": "Angus Burger",
+                  "sku": "22024004d3har",
+                  "productPrice": 8.19,
+                  "calories": "410 Cals",
+                  "description": "Flame-grilled 1/4lb* Angus burger and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 240,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127120,
+                      "name": "Angus Burger Combo",
+                      "sku": "22026012har",
+                      "productPrice": 13.29,
+                      "calories": "710-1110 Cals",
+                      "description": "Flame-grilled 1/4lb* Angus burger, and your choice of toppings on a toasted golden bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 710,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127851,
+                  "name": "Double Angus Burger",
+                  "sku": "22024005d3har",
+                  "productPrice": 10.59,
+                  "calories": "650 Cals",
+                  "description": "For the insatiable appetite, Harvey\u0027s Double Angus Burger includes two delicious quarter pound Angus burger patties cooked to perfection.",
+                  "isVegetarian": false,
+                  "caloriesNum": 480,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127649,
+                      "name": "Double Angus Burger Combo",
+                      "sku": "22026005har",
+                      "productPrice": 15.69,
+                      "calories": "950-1350 Cals",
+                      "description": "For the insatiable appetite, Harvey\u0027s Double Angus Burger includes two delicious quarter pound Angus burger patties cooked to perfection. You\u0027ll be longing to come back for more. Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 950,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 12878,
+              "categoryName": "BIG Harv Angus",
+              "products": [
+                {
+                  "productID": 127464,
+                  "name": "Big Harv® Angus",
+                  "sku": "22024084d3har",
+                  "productPrice": 11.79,
+                  "calories": "750 Cals",
+                  "description": "Two 1/4lb* Angus beef patties, Swiss and cheddar-style cheese slices and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 520,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127299,
+                      "name": "Big Harv® Angus Combo",
+                      "sku": "22026046har",
+                      "productPrice": 16.89,
+                      "calories": "1050-1450 Cals",
+                      "description": "Two 1/4lb* Angus beef patties, Swiss and cheddar-style cheese slices and your choice of toppings on a toasted golden bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1050,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4198,
+              "categoryName": "Original Burger",
+              "products": [
+                {
+                  "productID": 127522,
+                  "name": "Original Burger with Cheese \u0026 Bacon ",
+                  "sku": "22024014d3har",
+                  "productPrice": 9.39,
+                  "calories": "490 Cals",
+                  "description": "Flame-grilled Original beef burger, crispy bacon, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 320,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128146,
+                      "name": "Original Burger with Cheese and Bacon Combo",
+                      "sku": "22026014har",
+                      "productPrice": 14.49,
+                      "description": "Original Burger with Cheese and Bacon Combo",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106032,97108",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127636,
+                  "name": "Original Burger with Cheese",
+                  "sku": "22024013d3har",
+                  "productPrice": 8.09,
+                  "calories": "440 Cals",
+                  "description": "Flame-grilled, Original beef burger, processed cheddar-style cheese slice and your choice of toppings on a toasted golden bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 270,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127227,
+                      "name": "Original Burger with Cheese Combo",
+                      "sku": "22026013har",
+                      "productPrice": 13.19,
+                      "description": "Original Burger with Cheese Combo",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106029,97102",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 126996,
+                  "name": "Original Burger",
+                  "sku": "22024002d3har",
+                  "productPrice": 7.29,
+                  "calories": "380 Cals",
+                  "description": "Flame-grilled Original beef burger and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 126833,
+                      "name": "Original Burger Combo",
+                      "sku": "22026003har",
+                      "productPrice": 12.39,
+                      "calories": "680-1080 Cals",
+                      "description": "Flame-grilled Original beef burger and your choice of toppings on a toasted golden bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 680,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "99226,96265",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127029,
+                  "name": "Double Original Burger",
+                  "sku": "22024003d3har",
+                  "productPrice": 8.79,
+                  "calories": "590 Cals",
+                  "description": "Love Harvey\u0027s Original Burger twice as much! The same great Original burger flavour with twice the meat. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 420,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127380,
+                      "name": "Double Original Burger Combo",
+                      "sku": "22026004har",
+                      "productPrice": 13.89,
+                      "calories": "890-1290 Cals",
+                      "description": "Love Harvey\u0027s Original Burger twice as much! Same great taste with twice the meat.  Make it the way you want it. Served with your choice of a side and a drink. ",
+                      "isVegetarian": false,
+                      "caloriesNum": 890,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106026,96952",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 12882,
+              "categoryName": "BIG Harv Original",
+              "products": [
+                {
+                  "productID": 127611,
+                  "name": "Big Harv® Original",
+                  "sku": "22024085d3har",
+                  "productPrice": 9.99,
+                  "calories": "690 Cals",
+                  "description": "Two flame-grilled Original beef patties, Swiss and cheddar-style cheese slices and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 520,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127633,
+                      "name": "Big Harv® Original Combo",
+                      "sku": "22026047har",
+                      "productPrice": 15.09,
+                      "calories": "990-1390 Cals",
+                      "description": "The new Big Harv® Original. Double the meat. Double the cheese. Topped any way you want! With a side and 20 oz pop.",
+                      "isVegetarian": false,
+                      "caloriesNum": 990,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13265,
+              "categoryName": "Veggie Burger",
+              "products": [
+                {
+                  "productID": 128055,
+                  "name": "Veggie Burger",
+                  "sku": "22024010d3har",
+                  "productPrice": 7.29,
+                  "calories": "330 Cals",
+                  "description": "Harvey\u0027s signature vegetarian burger made with plant-based ingredients, and your choice of toppings on a toasted bun.",
+                  "isVegetarian": true,
+                  "caloriesNum": 170,
+                  "productSubType": "Burger",
+                  "nutritionalImageURL": "VEG",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127554,
+                      "name": "Veggie Burger Combo",
+                      "sku": "22026010har",
+                      "productPrice": 12.39,
+                      "calories": "630-1030 Cals",
+                      "description": "Harvey\u0027s signature veggie burger made with plant based ingredients and served on a fresh, lightly toasted bun of your choice - whole wheat or white. Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 630,
+                      "productSubType": "Burger",
+                      "nutritionalImageURL": "VEG",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106074,96976",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4207,
+          "categoryName": "Chicken",
+          "subCategories": [
+            {
+              "categoryID": 4447,
+              "categoryName": "Crispy Chicken Sandwich",
+              "products": [
+                {
+                  "productID": 127946,
+                  "name": "Crispy Chicken Sandwich",
+                  "sku": "22024007d3har",
+                  "productPrice": 8.19,
+                  "calories": "530 Cals",
+                  "description": "Crispy seasoned chicken breast and your choice of toppings on a toasted golden bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 530,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127789,
+                      "name": "Crispy Chicken Sandwich Combo",
+                      "sku": "22026007har",
+                      "productPrice": 13.29,
+                      "calories": "830-1230 Cals",
+                      "description": "Crispy seasoned chicken made with 100% Canadian chicken breast and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 830,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96964,106062",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4450,
+              "categoryName": "Buffalo Chicken Sandwich",
+              "products": [
+                {
+                  "productID": 127615,
+                  "name": "Buffalo Chicken Sandwich",
+                  "sku": "22024008d3har",
+                  "productPrice": 8.49,
+                  "calories": "630 Cals",
+                  "description": "Crispy seasoned chicken breast tossed in our signature buffalo sauce and your choice of toppings on a toasted golden bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 630,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127392,
+                      "name": "Buffalo Chicken Sandwich Combo",
+                      "sku": "22026008har",
+                      "productPrice": 13.59,
+                      "calories": 930,
+                      "description": "Crispy seasoned chicken made with 100% Canadian chicken breast tossed in our signature buffalo sauce and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "interchangeIDs": "106185,97048",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96967,106065",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4210,
+              "categoryName": "Grilled Chicken Sandwich",
+              "products": [
+                {
+                  "productID": 127539,
+                  "name": "Grilled Chicken Sandwich",
+                  "sku": "22024006d3har",
+                  "productPrice": 8.19,
+                  "calories": "290 Cals",
+                  "description": "Flame-grilled seasoned chicken breast and your choice of toppings on a toasted golden bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 290,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127665,
+                      "name": "Grilled Chicken Sandwich Combo",
+                      "sku": "22026006har",
+                      "productPrice": 13.29,
+                      "calories": "595-995 Cals",
+                      "description": "Crispy seasoned chicken made with 100% Canadian chicken breast and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 595,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96961,106059",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11681,
+              "categoryName": "Chicken Nuggets",
+              "products": [
+                {
+                  "productID": 128245,
+                  "name": "Chicken Nuggets (5)",
+                  "sku": "22024081d3har",
+                  "productPrice": 4.99,
+                  "calories": "440 Cals",
+                  "description": "Crispy seasoned chicken breast bites served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 440,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127136,
+                      "name": "Chicken Nuggets (5) Combo",
+                      "sku": "22026045har",
+                      "productPrice": 10.09,
+                      "calories": "740-1140 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast served with your choice of dipping sauce. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 740,
+                      "showImage": "Y",
+                      "interchangeIDs": 124244,
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 124240,
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128072,
+                  "name": "Chicken Nuggets (8)",
+                  "sku": "22024079d3har",
+                  "productPrice": 7.99,
+                  "calories": "700 Cals",
+                  "description": "Crispy seasoned chicken breast bites served with your choice of dipping sauce.",
+                  "isVegetarian": false,
+                  "caloriesNum": 700,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127695,
+                      "name": "Chicken Nuggets (8) Combo",
+                      "sku": "22026043har",
+                      "productPrice": 13.09,
+                      "calories": "1000-1400 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast served with your choice of dipping sauce. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1000,
+                      "showImage": "Y",
+                      "interchangeIDs": 124242,
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 124238,
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127152,
+                  "name": "Chicken Nuggets (12)",
+                  "sku": "22024080d3har",
+                  "productPrice": 11.99,
+                  "calories": "1050 Cals",
+                  "description": "Crispy seasoned chicken breast bites served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 1050,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127394,
+                      "name": "Chicken Nuggets (12) Combo",
+                      "sku": "22026044har",
+                      "productPrice": 17.09,
+                      "calories": "1350-1750 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast served with your choice of dipping sauce. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1350,
+                      "showImage": "Y",
+                      "interchangeIDs": 124243,
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 124239,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 12033,
+              "categoryName": "Buffalo Chicken Nuggets",
+              "products": [
+                {
+                  "productID": 128165,
+                  "name": "Buffalo Chicken Nuggets (5)",
+                  "sku": "22024070d3har",
+                  "productPrice": 5.29,
+                  "calories": "495 Cals",
+                  "description": "Crispy seasoned chicken breast bites, tossed in our signature buffalo sauce and served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 495,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127909,
+                      "name": "Buffalo Chicken Nuggets Combo (5)",
+                      "sku": "22026035har",
+                      "productPrice": 10.39,
+                      "calories": "790-1190 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast, tossed in our signature buffalo sauce and served with your choice of dipping sauce.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 790,
+                      "showImage": "Y",
+                      "interchangeIDs": "123662,124087",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123658,124084",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128191,
+                  "name": "Buffalo Chicken Nuggets (8)",
+                  "sku": "22024071d3har",
+                  "productPrice": 8.29,
+                  "calories": "790 Cals",
+                  "description": "Crispy seasoned chicken breast bites, tossed in our signature buffalo sauce and served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 790,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127569,
+                      "name": "Buffalo Chicken Nuggets Combo (8)",
+                      "sku": "22026036har",
+                      "productPrice": 13.39,
+                      "calories": "1090-1490 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast, tossed in our signature buffalo sauce and served with your choice of dipping sauce.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1090,
+                      "showImage": "Y",
+                      "interchangeIDs": "124088,123663",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123659,124085",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127149,
+                  "name": "Buffalo Chicken Nuggets (12)",
+                  "sku": "22024072d3har",
+                  "productPrice": 12.29,
+                  "calories": "1185 Cals",
+                  "description": "Crispy seasoned chicken breast bites, tossed in our signature buffalo sauce and served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 1185,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128007,
+                      "name": "Buffalo Chicken Nuggets Combo (12)",
+                      "sku": "22026037har",
+                      "productPrice": 17.39,
+                      "calories": "1500-1900 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast, tossed in our signature buffalo sauce and served with your choice of dipping sauce.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1500,
+                      "showImage": "Y",
+                      "interchangeIDs": "123664,124089",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123660,124086",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4324,
+              "categoryName": "Chicken Strips (4)",
+              "products": [
+                {
+                  "productID": 128097,
+                  "name": "Chicken Strips (4)",
+                  "sku": "22024009d3har",
+                  "productPrice": 8.99,
+                  "calories": "380 Cals",
+                  "description": "Crispy coated chicken breast strips served with your choice of dipping sauce.",
+                  "isVegetarian": false,
+                  "caloriesNum": 380,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127891,
+                      "name": "Chicken Strips Combo (4 Pieces)",
+                      "sku": "22026009har",
+                      "productPrice": 14.09,
+                      "calories": "680-1080 Cals",
+                      "description": "Try Harvey\u0027s juicy white meat chicken strips ruffle coated for an extra crunch. Customize your chicken strips with one of Harvey\u0027s tasty dipping sauces. Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 680,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96970,106068",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11793,
+              "categoryName": "Crispy Chicken Salad",
+              "products": [
+                {
+                  "productID": 127884,
+                  "name": "Crispy Chicken Salad",
+                  "sku": "22024062d3har",
+                  "productPrice": 10.19,
+                  "calories": "430 Cals",
+                  "description": "Pieces of crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 430,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127266,
+                      "name": "Crispy Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026033har",
+                      "productPrice": 12.69,
+                      "calories": "430-700 Cals",
+                      "description": "Pieces of crispy seasoned chicken made with 100% Canadian chicken served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 430,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122635,122657",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11794,
+              "categoryName": "Buffalo Chicken Salad",
+              "products": [
+                {
+                  "productID": 127438,
+                  "name": "Buffalo Chicken Salad",
+                  "sku": "22024063d3har",
+                  "productPrice": 10.49,
+                  "calories": "530 Cals",
+                  "description": "Pieces of buffalo-tossed crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 530,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127898,
+                      "name": "Buffalo Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026034har",
+                      "productPrice": 12.99,
+                      "calories": "530-800 Cals",
+                      "description": "Pieces of buffalo-tossed crispy seasoned chicken made with 100% Canadian chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 530,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122636,122658",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11078,
+              "categoryName": "Grilled Chicken Salad",
+              "products": [
+                {
+                  "productID": 128025,
+                  "name": "Grilled Chicken Salad",
+                  "sku": "22024026d3har",
+                  "productPrice": 10.19,
+                  "calories": "200 Cals",
+                  "description": "Pieces of flame-grilled seasoned chicken breast, served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 200,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127969,
+                      "name": "Grilled Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026023har",
+                      "productPrice": 12.69,
+                      "calories": "205-475 Cals",
+                      "description": "Flame-grilled seasoned chicken made with 100% Canadian chicken breast, and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 205,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 98365,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4261,
+          "categoryName": "Wraps and Salads",
+          "subCategories": [
+            {
+              "categoryID": 4513,
+              "categoryName": "Grilled Chicken Wrap",
+              "products": [
+                {
+                  "productID": 127777,
+                  "name": "Grilled Chicken Wrap",
+                  "sku": "22024022d3har",
+                  "productPrice": 8.49,
+                  "calories": "440 Cals",
+                  "description": "Soft tortilla wrap toasted over the flame-grill, filled with seasoned grilled chicken beast and your choice of toppings and sauces.",
+                  "isVegetarian": false,
+                  "caloriesNum": 440,
+                  "productSubType": "Wrap",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127482,
+                      "name": "Grilled Chicken Wrap Combo",
+                      "sku": "22026020har",
+                      "productPrice": 13.59,
+                      "calories": "745-1145 Cals",
+                      "description": "Soft tortilla wrap toasted over the flame-grill, filled with seasoned grilled chicken beast  and your choice of toppings and sauces. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 745,
+                      "productSubType": "Wrap",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "97141,106104",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4510,
+              "categoryName": "Crispy Chicken Wrap",
+              "products": [
+                {
+                  "productID": 127874,
+                  "name": "Crispy Chicken Wrap",
+                  "sku": "22024021d3har",
+                  "productPrice": 8.49,
+                  "calories": "670 Cals",
+                  "description": "Soft tortilla wrap toasted over the flame-grill, filled with crispy seasoned breast and your choice of toppings and sauces.",
+                  "isVegetarian": false,
+                  "caloriesNum": 670,
+                  "productSubType": "Wrap",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127293,
+                      "name": "Crispy Chicken Wrap Combo",
+                      "sku": "22026019har",
+                      "productPrice": 13.59,
+                      "calories": "970-1370 Cals",
+                      "description": "Soft tortilla wrap toasted over the flame-grill, filled with crispy seasoned breast and your choice of toppings and sauces. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "productSubType": "Wrap",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "97138,106101",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4516,
+              "categoryName": "Buffalo Chicken Wrap",
+              "products": [
+                {
+                  "productID": 127582,
+                  "name": "Buffalo Chicken Wrap",
+                  "sku": "22024023d3har",
+                  "productPrice": 8.79,
+                  "calories": "770 Cals",
+                  "description": "Soft tortilla wrap toasted over the flame-grill, filled with buffalo-tossed crispy seasoned breast and your choice of toppings and sauces.",
+                  "isVegetarian": false,
+                  "caloriesNum": 770,
+                  "productSubType": "Wrap",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127429,
+                      "name": "Buffalo Chicken Wrap Combo",
+                      "sku": "22026021har",
+                      "productPrice": 13.89,
+                      "calories": "1070-1470 Cals",
+                      "description": "Soft tortilla wrap toasted over the flame-grill, filled with buffalo-tossed crispy seasoned breast  and your choice of toppings and sauces. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 1070,
+                      "productSubType": "Wrap",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "97144,106107",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13929,
+              "categoryName": "Crispy Chicken Salad",
+              "products": [
+                {
+                  "productID": 127884,
+                  "name": "Crispy Chicken Salad",
+                  "sku": "22024062d3har",
+                  "productPrice": 10.19,
+                  "calories": "430 Cals",
+                  "description": "Pieces of crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 430,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127266,
+                      "name": "Crispy Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026033har",
+                      "productPrice": 12.69,
+                      "calories": "430-700 Cals",
+                      "description": "Pieces of crispy seasoned chicken made with 100% Canadian chicken served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 430,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122635,122657",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13931,
+              "categoryName": "Buffalo Chicken Salad",
+              "products": [
+                {
+                  "productID": 127438,
+                  "name": "Buffalo Chicken Salad",
+                  "sku": "22024063d3har",
+                  "productPrice": 10.49,
+                  "calories": "530 Cals",
+                  "description": "Pieces of buffalo-tossed crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 530,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127898,
+                      "name": "Buffalo Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026034har",
+                      "productPrice": 12.99,
+                      "calories": "530-800 Cals",
+                      "description": "Pieces of buffalo-tossed crispy seasoned chicken made with 100% Canadian chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 530,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122636,122658",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13930,
+              "categoryName": "Grilled Chicken Salad",
+              "products": [
+                {
+                  "productID": 128025,
+                  "name": "Grilled Chicken Salad",
+                  "sku": "22024026d3har",
+                  "productPrice": 10.19,
+                  "calories": "200 Cals",
+                  "description": "Pieces of flame-grilled seasoned chicken breast, served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 200,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127969,
+                      "name": "Grilled Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026023har",
+                      "productPrice": 12.69,
+                      "calories": "205-475 Cals",
+                      "description": "Flame-grilled seasoned chicken made with 100% Canadian chicken breast, and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 205,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 98365,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13932,
+              "categoryName": "Side Salad",
+              "products": [
+                {
+                  "productID": 127816,
+                  "name": "Side Salad",
+                  "sku": "22084017d3har",
+                  "productPrice": 4.49,
+                  "calories": "35 Cals",
+                  "description": "Freshly prepared salad with lettuce, cucumber, shredded carrots and tomatoes. Served with your choice of dressing. ",
+                  "isVegetarian": true,
+                  "caloriesNum": 35,
+                  "nutritionalImageURL": "VEG",
+                  "showImage": "Y",
+                  "interchangeIDs": "96913,106353",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4219,
+          "categoryName": "Poutines",
+          "subCategories": [
+            {
+              "categoryID": 14339,
+              "categoryName": "Pickle Pickle Poutine",
+              "products": [
+                {
+                  "productID": 128943,
+                  "name": "Pickle Pickle Poutine- Regular",
+                  "sku": "22084116d3har",
+                  "productPrice": 8.19,
+                  "calories": "930 Cals",
+                  "description": "Our Signature Premium Poutine with cheese curds topped with gravy, 2 deep fried pickles, diced pickles and garlic ranch drizzle in regular size",
+                  "isVegetarian": false,
+                  "caloriesNum": 930,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128948,
+                      "name": "Pickle Pickle Poutine- Rg with a 20 oz drink",
+                      "sku": "22026062har",
+                      "productPrice": 10.69,
+                      "calories": "930-1220 Cals",
+                      "description": "Our Signature Premium Poutine with cheese curds topped with gravy, 2 deep fried pickles, diced pickles and garlic ranch drizzle in regular size with a 20oz  drink",
+                      "isVegetarian": false,
+                      "caloriesNum": 930,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128940,
+                  "name": "Pickle Pickle Poutine- Large",
+                  "sku": "22024110d3har",
+                  "productPrice": 11.19,
+                  "calories": "1550 Cals",
+                  "description": "Our Signature Premium Poutine with cheese curds topped with gravy, 2 deep fried pickles, diced pickles and garlic ranch drizzle in large size",
+                  "isVegetarian": false,
+                  "caloriesNum": 1550,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128933,
+                      "name": "Pickle Pickle Poutine- Lg with a  20 oz drink",
+                      "sku": "22026063har",
+                      "productPrice": 13.69,
+                      "calories": "1550-1840 Cals",
+                      "description": "Our Signature Premium Poutine with cheese curds topped with gravy, 2 deep fried pickles, diced pickles and garlic ranch drizzle in large size with a 20oz  drink\t\t\t",
+                      "isVegetarian": false,
+                      "caloriesNum": 1550,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 5026,
+              "categoryName": "Bacon Double Cheese Poutine",
+              "products": [
+                {
+                  "productID": 128040,
+                  "name": "Regular Bacon Double Cheese Poutine",
+                  "sku": "22084052d3har",
+                  "productPrice": 8.19,
+                  "calories": "850 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, cheese curds, shredded cheese, and crispy bacon. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 850,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127943,
+                      "name": "Regular Bacon Double Cheese Poutine with 20 oz Soft Drink",
+                      "sku": "22026029har",
+                      "productPrice": 10.69,
+                      "calories": "850-1120 Cals",
+                      "description": "Our Signature Premium Poutine with crispy bacon cheese curds and shredded cheese on top of gravy in regular size  with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 850,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122537,122562",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127799,
+                  "name": "Large Bacon Double Cheese Poutine",
+                  "sku": "22024027d3har",
+                  "productPrice": 11.19,
+                  "calories": "1400 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, cheese curds, shredded cheese, and crispy bacon. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 1400,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128170,
+                      "name": "Large Bacon Double Cheese Poutine with 20 oz Soft Drink",
+                      "sku": "22026024har",
+                      "productPrice": 13.69,
+                      "calories": "1400-1670 Cals",
+                      "description": "Our Signature Premium Poutine with crispy bacon, cheese curds and shredded cheese on top of gravy in large size with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 1400,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "98581,106758",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 5029,
+              "categoryName": "Buffalo Chicken Poutine",
+              "products": [
+                {
+                  "productID": 127208,
+                  "name": "Regular Buffalo Chicken Poutine",
+                  "sku": "22084053d3har",
+                  "productPrice": 8.19,
+                  "calories": "850 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, crispy seasoned chicken breast, cheese curds, and drizzled with our signature buffalo sauce.",
+                  "isVegetarian": false,
+                  "caloriesNum": 850,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127314,
+                      "name": "Regular Buffalo Chicken Poutine with 20 oz Soft Drink",
+                      "sku": "22026030har",
+                      "productPrice": 10.69,
+                      "calories": "850-1120 Cals",
+                      "description": "Our Signature Premium Poutine with buffalo crispy chicken topping on melty cheese curds and gravy in regular size with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 850,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122538,122563",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127234,
+                  "name": "Large Buffalo Chicken Poutine",
+                  "sku": "22024028d3har",
+                  "productPrice": 11.19,
+                  "calories": "1490 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, crispy seasoned chicken breast made with 100% Canadian chicken, cheese curds, and drizzled with our signature buffalo sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 1490,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127143,
+                      "name": "Large Buffalo Chicken Poutine with 20 oz Soft Drink",
+                      "sku": "22026025har",
+                      "productPrice": 13.69,
+                      "calories": "1490 Cals",
+                      "description": "Our Signature Premium Poutine with buffalo crispy chicken topping on melty cheese curds and gravy in large size with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 1490,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "98584,106761",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11767,
+              "categoryName": "Chicken Bacon Ranch Poutine",
+              "products": [
+                {
+                  "productID": 127804,
+                  "name": "Regular Chicken Bacon Ranch Poutine",
+                  "sku": "22084054d3har",
+                  "productPrice": 9.39,
+                  "calories": "910 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, cheese curds, crispy seasoned chicken breast made with 100% Canadian chicken, crispy bacon and drizzled with creamy ranch dressing. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 910,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128199,
+                      "name": "Regular Chicken Bacon Ranch Poutine with 20 oz Soft Drink",
+                      "sku": "22026031har",
+                      "productPrice": 11.89,
+                      "calories": "910-1180 Cals",
+                      "description": "Our Signature Premium Poutine with crispy chicken, crispy bacon and ranch dressing on top of melty cheese curds and gravy in regular size with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 910,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122539,122564",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127741,
+                  "name": "Large Chicken Bacon Ranch Poutine",
+                  "sku": "22024061d3har",
+                  "productPrice": 12.39,
+                  "calories": "1700 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy, cheese curds, crispy seasoned chicken breast made with 100% Canadian chicken, crispy bacon and drizzled with creamy ranch dressing. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 1700,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127796,
+                      "name": "Large Chicken Bacon Ranch Poutine with 20 oz Soft Drink",
+                      "sku": "22026032har",
+                      "productPrice": 14.89,
+                      "calories": "1700-1970 Cals",
+                      "description": "Our Signature Premium Poutine with crispy chicken, crispy bacon and ranch dressing on top of melty cheese curds and gravy in large size with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 1700,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122532,122565",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4222,
+              "categoryName": "Classic Poutine",
+              "products": [
+                {
+                  "productID": 127459,
+                  "name": "Regular Classic Poutine",
+                  "sku": "22084016d3har",
+                  "productPrice": 6.29,
+                  "calories": "700 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy and cheese curds. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 700,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127214,
+                      "name": "Regular Classic Poutine with 20 oz Soft Drink",
+                      "sku": "22026026har",
+                      "productPrice": 8.79,
+                      "calories": "700-970 Cals",
+                      "description": "Our Signature Classic Poutine with Fries, cheese curds and gravy. The poutine is also vegetarian with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 700,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127485,
+                  "name": "Large Classic Poutine",
+                  "sku": "22084001d3har",
+                  "productPrice": 8.29,
+                  "calories": "1210 Cals",
+                  "description": "Crispy, golden fries made with 100% Canadian potatoes, topped with vegetarian gravy and cheese curds. ",
+                  "isVegetarian": true,
+                  "caloriesNum": 1210,
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127852,
+                      "name": "Large Classic Poutine with 20 oz Soft Drink",
+                      "sku": "22026001har",
+                      "productPrice": 10.79,
+                      "calories": "1210-1480 Cals",
+                      "description": "Our Signature Classic Poutine with Fries, cheese curds and gravy in large size. The poutine is also vegetarian with your choice of soft drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 1210,
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4429,
+          "categoryName": "Other Options",
+          "subCategories": [
+            {
+              "categoryID": 4432,
+              "categoryName": "Veggie Burger",
+              "products": [
+                {
+                  "productID": 128055,
+                  "name": "Veggie Burger",
+                  "sku": "22024010d3har",
+                  "productPrice": 7.29,
+                  "calories": "330 Cals",
+                  "description": "Harvey\u0027s signature vegetarian burger made with plant-based ingredients, and your choice of toppings on a toasted bun.",
+                  "isVegetarian": true,
+                  "caloriesNum": 170,
+                  "productSubType": "Burger",
+                  "nutritionalImageURL": "VEG",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127554,
+                      "name": "Veggie Burger Combo",
+                      "sku": "22026010har",
+                      "productPrice": 12.39,
+                      "calories": "630-1030 Cals",
+                      "description": "Harvey\u0027s signature veggie burger made with plant based ingredients and served on a fresh, lightly toasted bun of your choice - whole wheat or white. Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 630,
+                      "productSubType": "Burger",
+                      "nutritionalImageURL": "VEG",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106074,96976",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4483,
+              "categoryName": "Grilled Hot Dog",
+              "products": [
+                {
+                  "productID": 127761,
+                  "name": "Grilled Hot Dog",
+                  "sku": "22024011d3har",
+                  "productPrice": 3,
+                  "calories": "340 Cals",
+                  "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 340,
+                  "productSubType": "Hot Dog",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127444,
+                      "name": "Grilled Hot Dog Combo",
+                      "sku": "22026011har",
+                      "productPrice": 8.1,
+                      "calories": "640-1040 Cals",
+                      "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 640,
+                      "productSubType": "Hot Dog",
+                      "showImage": "Y",
+                      "interchangeIDs": "97057,106200",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96982,106080",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11802,
+              "categoryName": "Grilled Chicken Salad",
+              "products": [
+                {
+                  "productID": 128025,
+                  "name": "Grilled Chicken Salad",
+                  "sku": "22024026d3har",
+                  "productPrice": 10.19,
+                  "calories": "200 Cals",
+                  "description": "Pieces of flame-grilled seasoned chicken breast, served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 200,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127969,
+                      "name": "Grilled Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026023har",
+                      "productPrice": 12.69,
+                      "calories": "205-475 Cals",
+                      "description": "Flame-grilled seasoned chicken made with 100% Canadian chicken breast, and your choice of toppings on a toasted golden bun.  (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 205,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 98365,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11803,
+              "categoryName": "Crispy Chicken Salad",
+              "products": [
+                {
+                  "productID": 127884,
+                  "name": "Crispy Chicken Salad",
+                  "sku": "22024062d3har",
+                  "productPrice": 10.19,
+                  "calories": "430 Cals",
+                  "description": "Pieces of crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 430,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127266,
+                      "name": "Crispy Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026033har",
+                      "productPrice": 12.69,
+                      "calories": "430-700 Cals",
+                      "description": "Pieces of crispy seasoned chicken made with 100% Canadian chicken served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 430,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122635,122657",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11804,
+              "categoryName": "Buffalo Chicken Salad",
+              "products": [
+                {
+                  "productID": 127438,
+                  "name": "Buffalo Chicken Salad",
+                  "sku": "22024063d3har",
+                  "productPrice": 10.49,
+                  "calories": "530 Cals",
+                  "description": "Pieces of buffalo-tossed crispy seasoned chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                  "isVegetarian": false,
+                  "caloriesNum": 530,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127898,
+                      "name": "Buffalo Chicken Salad with 20oz Soft Drink",
+                      "sku": "22026034har",
+                      "productPrice": 12.99,
+                      "calories": "530-800 Cals",
+                      "description": "Pieces of buffalo-tossed crispy seasoned chicken made with 100% Canadian chicken breast served over a fresh blend of lettuce, shredded carrots, tomatoes, cucumbers and your choice of salad dressing.",
+                      "isVegetarian": false,
+                      "caloriesNum": 530,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "122636,122658",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4225,
+          "categoryName": "Harv\u0027s Value Picks",
+          "subCategories": [
+            {
+              "categoryID": 4486,
+              "categoryName": "Jr. Burger",
+              "products": [
+                {
+                  "productID": 128244,
+                  "name": "Jr. Burger",
+                  "sku": "22024024d3har",
+                  "productPrice": 2.99,
+                  "calories": "250 Cals",
+                  "description": "Snack-size version of our famous Original burger and your choice of toppings on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 110,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127315,
+                      "name": "Jr. Burger Combo",
+                      "sku": "22026022har",
+                      "productPrice": 8.09,
+                      "calories": "550-950 Cals",
+                      "description": "The same great taste as Harvey\u0027s famous Original Burger, just in a snack-able size. Served with your choice of a side or a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 550,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "interchangeIDs": "106212,97522",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "106092,97516",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127957,
+                  "name": "Jr. Cheeseburger",
+                  "sku": "22024074d3har",
+                  "productPrice": 3.39,
+                  "calories": "280 Cals",
+                  "description": "Flame-grilled Jr. patty topped with a slice of processed cheddar-style cheese and your choice of toppings served on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 140,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128103,
+                      "name": "Jr. Cheeseburger Combo",
+                      "sku": "22026039har",
+                      "productPrice": 8.49,
+                      "description": "Jr. Cheeseburger Combo",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "interchangeIDs": "123943,123935",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123939,123931",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127568,
+                  "name": "Jr. Bacon Cheeseburger",
+                  "sku": "22024075d3har",
+                  "productPrice": 4.29,
+                  "calories": "310 Cals",
+                  "description": "Flame-grilled Jr. patty topped with a slice of processed cheddar-style cheese, crispy bacon and your choice of toppings on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 170,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128042,
+                      "name": "Jr. Bacon Cheeseburger Combo",
+                      "sku": "22026040har",
+                      "productPrice": 9.39,
+                      "description": "Jr. Bacon Cheeseburger Combo",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123940,123932",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 12416,
+              "categoryName": "Double Jr. Burger",
+              "products": [
+                {
+                  "productID": 127427,
+                  "name": "Double Jr. Burger",
+                  "sku": "22024001d3har",
+                  "productPrice": 3.99,
+                  "calories": "350 Cals",
+                  "description": "Double the goodness of the Harvey\u0027s signature Junior Burger!",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128173,
+                      "name": "Double Jr. Burger Combo",
+                      "sku": "22026002har",
+                      "productPrice": 9.09,
+                      "calories": "650-1050 Cals",
+                      "description": "Double the goodness of our signature Junior Burger. Served with your choice of a side or a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 650,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "120566,120564",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127622,
+                  "name": "Double Jr. Cheeseburger",
+                  "sku": "22024076d3har",
+                  "productPrice": 4.39,
+                  "calories": "410 Cals",
+                  "description": "Snack-size version of our famous Original burger with your choice of toppings and served on a toasted white bun. Available with cheese, bacon and as doubles. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 270,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127888,
+                      "name": "Double Jr. Cheeseburger Combo",
+                      "sku": "22026041har",
+                      "productPrice": 9.49,
+                      "description": "Double Jr. Cheeseburger Combo",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "123941,123933",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11273,
+              "categoryName": "Jr. Crispy ",
+              "products": [
+                {
+                  "productID": 127267,
+                  "name": "Jr. Crispy ",
+                  "sku": "22024048d3har",
+                  "productPrice": 3.39,
+                  "calories": "290 Cals",
+                  "description": "Crispy coated chicken patty made with 100% Canadian chicken and your choice of toppings on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 150,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 128129,
+                      "name": "Jr. Crispy Combo",
+                      "sku": "22026027har",
+                      "productPrice": 8.39,
+                      "calories": "590-990 Cals",
+                      "description": "The JR Crispy Chicken\u0027s ruffled coating will give you a tasty bite you can hear in a snack-able size. Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "caloriesNum": 590,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "121140,121162",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127430,
+                  "name": "Jr. Buffalo",
+                  "sku": "22024049d3har",
+                  "productPrice": 3.69,
+                  "calories": "310 Cals",
+                  "description": "Crispy coated chicken patty made with 100% Canadian chicken tossed in our signature buffalo sauce and your choice of toppings on a toasted white bun. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 170,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127713,
+                      "name": "Jr. Buffalo Combo ",
+                      "sku": "22026028har",
+                      "productPrice": 8.79,
+                      "calories": "360-1040 Cals",
+                      "description": "Crispy chicken breast tossed in Harvey\u0027s tasty buffalo sauce in a snack-able size. Made with 100% Canadian Chicken.  Served with your choice of a side and a drink.",
+                      "isVegetarian": false,
+                      "productSubType": "Burger",
+                      "showImage": "Y",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "121141,121163",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11683,
+              "categoryName": "Chicken Nuggets",
+              "products": [
+                {
+                  "productID": 128245,
+                  "name": "Chicken Nuggets (5)",
+                  "sku": "22024081d3har",
+                  "productPrice": 4.99,
+                  "calories": "440 Cals",
+                  "description": "Crispy seasoned chicken breast bites served with your choice of dipping sauce. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 440,
+                  "upsellItem": {
+                    "productID": 127619,
+                    "name": "Extra Dipping Sauce",
+                    "sku": "22084081d3har",
+                    "productPrice": 0.4,
+                    "calories": "40-120 Cals",
+                    "description": "Extra Dip Sauce",
+                    "isVegetarian": false,
+                    "showImage": "Y",
+                    "configurations": [
+                      {
+                        "name": "e-Dip1",
+                        "minqty": 1,
+                        "maxqty": 1,
+                        "id": 14065,
+                        "options": [
+                          {
+                            "name": "Honey mustard dipping sauce",
+                            "productID": 127871,
+                            "productPrice": 0,
+                            "calories": "90 Cals",
+                            "sku": "22095101d3har",
+                            "caloriesNum": 90
+                          },
+                          {
+                            "name": "Sweet and Sour dipping sauce",
+                            "productID": 127324,
+                            "productPrice": 0,
+                            "calories": "50 Cals",
+                            "sku": "22095102d3har",
+                            "caloriesNum": 50
+                          },
+                          {
+                            "name": "No Sauce",
+                            "productID": 128118,
+                            "productPrice": 0,
+                            "sku": "22095103d3har"
+                          },
+                          {
+                            "name": "BBQ dipping sauce",
+                            "productID": 128179,
+                            "productPrice": 0,
+                            "calories": "40 Cals",
+                            "sku": "22095104d3har",
+                            "caloriesNum": 40
+                          },
+                          {
+                            "name": "Ranch dipping sauce",
+                            "productID": 128032,
+                            "productPrice": 0,
+                            "calories": "100 Cals",
+                            "sku": "22095105d3har",
+                            "caloriesNum": 100
+                          },
+                          {
+                            "name": "Ghost Pepper dipping sauce",
+                            "productID": 128185,
+                            "productPrice": 0,
+                            "calories": "140 Cals",
+                            "sku": "22095106d3har",
+                            "caloriesNum": 140
+                          },
+                          {
+                            "name": "Sweet Heat dipping sauce",
+                            "productID": 127692,
+                            "productPrice": 0,
+                            "calories": "45 Cals",
+                            "sku": "22095107d3har",
+                            "caloriesNum": 45
+                          },
+                          {
+                            "name": "GDill Dip",
+                            "productID": 128312,
+                            "productPrice": 0,
+                            "sku": "22095108d1har"
+                          }
+                        ]
+                      }
+                    ],
+                    "interchangeIDs": "122786,122796",
+                    "customFields": [
+                      ""
+                    ]
+                  },
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127136,
+                      "name": "Chicken Nuggets (5) Combo",
+                      "sku": "22026045har",
+                      "productPrice": 10.09,
+                      "calories": "740-1140 Cals",
+                      "description": "Crispy seasoned chicken bites made with 100% Canadian chicken breast served with your choice of dipping sauce. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 740,
+                      "showImage": "Y",
+                      "interchangeIDs": 124244,
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": 124240,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13922,
+              "categoryName": "Grilled Hot Dog",
+              "products": [
+                {
+                  "productID": 127761,
+                  "name": "Grilled Hot Dog",
+                  "sku": "22024011d3har",
+                  "productPrice": 3,
+                  "calories": "340 Cals",
+                  "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun.",
+                  "isVegetarian": false,
+                  "caloriesNum": 340,
+                  "productSubType": "Hot Dog",
+                  "showImage": "Y",
+                  "upgrades": [
+                    {
+                      "productID": 127444,
+                      "name": "Grilled Hot Dog Combo",
+                      "sku": "22026011har",
+                      "productPrice": 8.1,
+                      "calories": "640-1040 Cals",
+                      "description": "Flame-grilled hot dog and your choice of toppings on a soft toasted bun. (Each combo comes with a regular fries or onion rings and a 20oz drink.)",
+                      "isVegetarian": false,
+                      "caloriesNum": 640,
+                      "productSubType": "Hot Dog",
+                      "showImage": "Y",
+                      "interchangeIDs": "97057,106200",
+                      "customFields": [
+                        ""
+                      ]
+                    }
+                  ],
+                  "interchangeIDs": "96982,106080",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4489,
+              "categoryName": "Fries",
+              "products": [
+                {
+                  "productID": 127027,
+                  "name": "Regular Fries",
+                  "sku": "22084013d3har",
+                  "productPrice": 3.99,
+                  "calories": "430 Cals",
+                  "description": "Crispy, skin-on fries made with 100% Canadian potatoes from local farmers. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 430,
+                  "showImage": "Y",
+                  "interchangeIDs": "96901,106341",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127457,
+                  "name": "Large Fries",
+                  "sku": "22084012d3har",
+                  "productPrice": 4.79,
+                  "calories": "550 Cals",
+                  "description": "Crispy, skin-on fries made with 100% Canadian potatoes from local farmers. ",
+                  "isVegetarian": true,
+                  "caloriesNum": 550,
+                  "showImage": "Y",
+                  "interchangeIDs": "106338,96898",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4495,
+              "categoryName": "Onion Rings",
+              "products": [
+                {
+                  "productID": 127040,
+                  "name": "Regular Onion Rings",
+                  "sku": "22084015d3har",
+                  "productPrice": 3.99,
+                  "calories": "300 Cals",
+                  "description": "Crispy, golden onion rings made with real onions. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 300,
+                  "showImage": "Y",
+                  "interchangeIDs": "96907,106350",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127252,
+                  "name": "Large Onion Rings",
+                  "sku": "22084014d3har",
+                  "productPrice": 4.79,
+                  "calories": "600 Cals",
+                  "description": "Crispy, golden onion rings made with real onions.",
+                  "isVegetarian": true,
+                  "caloriesNum": 600,
+                  "showImage": "Y",
+                  "interchangeIDs": "96904,106347",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4492,
+              "categoryName": "Frings",
+              "products": [
+                {
+                  "productID": 127484,
+                  "name": "Frings",
+                  "sku": "22084010d3har",
+                  "productPrice": 4.49,
+                  "calories": "620 Cals",
+                  "description": "Harvey\u0027s signature Frings® gives you the best of both worlds. Crispy, skin-on fries and golden onion rings. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 620,
+                  "showImage": "Y",
+                  "interchangeIDs": "102346,96892",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4498,
+              "categoryName": "Deep Fried Pickles",
+              "products": [
+                {
+                  "productID": 127596,
+                  "name": "Deep Fried Pickles",
+                  "sku": "22084011d3har",
+                  "productPrice": 3,
+                  "calories": "250 Cals",
+                  "description": "Tangy dill pickle spears, breaded and deep-fried to a golden crisp. Served with a creamy ranch dipping sauce. 4 pc. ",
+                  "isVegetarian": true,
+                  "caloriesNum": 250,
+                  "showImage": "Y",
+                  "interchangeIDs": "106335,96895",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4504,
+              "categoryName": "Pie",
+              "products": [
+                {
+                  "productID": 127641,
+                  "name": "Apple Pie",
+                  "sku": "22064003d3har",
+                  "productPrice": 1.89,
+                  "calories": "220 Cals",
+                  "description": "Crispy on the outside and deliciously hot and sweet on the inside. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 220,
+                  "showImage": "Y",
+                  "interchangeIDs": "96922,106362",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128234,
+                  "name": "2 Pie Combo",
+                  "sku": "22066001har",
+                  "productPrice": 2.99,
+                  "calories": "440 Cals",
+                  "description": "2 Pie Combo",
+                  "isVegetarian": false,
+                  "caloriesNum": 440,
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4501,
+              "categoryName": "Donuts",
+              "products": [
+                {
+                  "productID": 128206,
+                  "name": "Donuts 4 Pack ",
+                  "sku": "22064001d3har",
+                  "productPrice": 2.19,
+                  "calories": "360 Cals",
+                  "description": "Hot and fresh mini donuts dusted in cinnamon sugar. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 360,
+                  "showImage": "Y",
+                  "interchangeIDs": "96916,106356",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127662,
+                  "name": "Donuts 8 Pack ",
+                  "sku": "22064002d3har",
+                  "productPrice": 3,
+                  "calories": "720 Cals",
+                  "description": "Hot and fresh mini donuts dusted in cinnamon sugar. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 720,
+                  "showImage": "Y",
+                  "interchangeIDs": "96919,106359",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 13320,
+          "categoryName": "Sweet Picks",
+          "subCategories": [
+            {
+              "categoryID": 13321,
+              "categoryName": "Pie",
+              "products": [
+                {
+                  "productID": 127641,
+                  "name": "Apple Pie",
+                  "sku": "22064003d3har",
+                  "productPrice": 1.89,
+                  "calories": "220 Cals",
+                  "description": "Crispy on the outside and deliciously hot and sweet on the inside. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 220,
+                  "showImage": "Y",
+                  "interchangeIDs": "96922,106362",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128234,
+                  "name": "2 Pie Combo",
+                  "sku": "22066001har",
+                  "productPrice": 2.99,
+                  "calories": "440 Cals",
+                  "description": "2 Pie Combo",
+                  "isVegetarian": false,
+                  "caloriesNum": 440,
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13322,
+              "categoryName": "Donuts",
+              "products": [
+                {
+                  "productID": 128206,
+                  "name": "Donuts 4 Pack ",
+                  "sku": "22064001d3har",
+                  "productPrice": 2.19,
+                  "calories": "360 Cals",
+                  "description": "Hot and fresh mini donuts dusted in cinnamon sugar. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 360,
+                  "showImage": "Y",
+                  "interchangeIDs": "96916,106356",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127662,
+                  "name": "Donuts 8 Pack ",
+                  "sku": "22064002d3har",
+                  "productPrice": 3,
+                  "calories": "720 Cals",
+                  "description": "Hot and fresh mini donuts dusted in cinnamon sugar. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 720,
+                  "showImage": "Y",
+                  "interchangeIDs": "96919,106359",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 12464,
+          "categoryName": "Hand Spun Shakes",
+          "subCategories": [
+            {
+              "categoryID": 12465,
+              "categoryName": "Hand Spun Shakes ",
+              "products": [
+                {
+                  "productID": 121853,
+                  "name": "Salted Caramel Shake",
+                  "sku": "Salted Caramel Shake",
+                  "productPrice": 3,
+                  "calories": "650-860 Cals",
+                  "description": "Blend of our vanilla milkshake base and sweet caramel for a rich, delicious flavour.",
+                  "isVegetarian": false,
+                  "caloriesNum": 650,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 121857,
+                  "name": "Shake made with SKOR® ",
+                  "sku": "SKOR Shake",
+                  "productPrice": 3.7,
+                  "calories": "730-1020 Cals",
+                  "description": "Salted Caramel shake base with real SKOR® bits. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 730,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116454,
+                  "name": "Chocolate Shake",
+                  "sku": "Chocolate Shake",
+                  "productPrice": 3,
+                  "calories": "660-890 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with a rich chocolate syrup. ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116457,
+                  "name": "Vanilla Shake",
+                  "sku": "Vanilla Shake",
+                  "productPrice": 3,
+                  "calories": "580-720 Cals ",
+                  "description": "Deliciously thick and smooth, handspun vanilla milkshake made using 100% Canadian Dairy. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 580,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116460,
+                  "name": "Strawberry Shake",
+                  "sku": "Strawberry Shake",
+                  "productPrice": 3,
+                  "calories": "650-870 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with strawberry syrup. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 650,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116463,
+                  "name": "Orange Cream Shake",
+                  "sku": "Orange Cream Shake",
+                  "productPrice": 3,
+                  "calories": "590-740 Cals",
+                  "description": "Thick and creamy vanilla milkshake base hand spun with orange syrup for a full creamsicle sensation.",
+                  "isVegetarian": false,
+                  "caloriesNum": 590,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116466,
+                  "name": "Shake made with OREO®",
+                  "sku": "Oreo Shake",
+                  "productPrice": 3.7,
+                  "calories": "610-790 Cals",
+                  "description": "Crushed OREO® cookies handspun with our creamy vanilla base for a perfect cookies and cream flavour. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 610,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 11082,
+          "categoryName": "Red Bull",
+          "subCategories": [
+            {
+              "categoryID": 13924,
+              "categoryName": "Frozen Red Bull® Blue Raspberry ",
+              "products": [
+                {
+                  "productID": 128006,
+                  "name": "Frozen Red Bull® Blue Raspberry ",
+                  "sku": "22074387d3har",
+                  "productPrice": 5.69,
+                  "calories": "270 Cals",
+                  "description": "Refresh and reenergize with a Frozen Red Bull infused with Blue Raspberry flavour. Each cup contains a full can of Red Bull Energy Drink®. Frozen Red Bull contains 80mg of caffeine. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 270,
+                  "showImage": "Y",
+                  "interchangeIDs": "126600,126616",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13336,
+              "categoryName": "Frozen Red Bull® Strawberry Watermelon",
+              "products": [
+                {
+                  "productID": 128247,
+                  "name": "Frozen Red Bull® Strawberry Watermelon",
+                  "sku": "22074283d3har",
+                  "productPrice": 5.69,
+                  "calories": "380 Cals",
+                  "description": "Refresh and reenergize with the Frozen Red Bull infused with Strawberry and Watermelon flavours. Each cup contains a full can of Red Bull Red Edition Energy Drink®. Frozen Red Bull contains 80mg of caffeine.",
+                  "isVegetarian": false,
+                  "caloriesNum": 380,
+                  "showImage": "Y",
+                  "interchangeIDs": "124341,124347",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13337,
+              "categoryName": "Frozen Red Bull® Peach",
+              "products": [
+                {
+                  "productID": 128029,
+                  "name": "Frozen Red Bull® Peach",
+                  "sku": "22074259d3har",
+                  "productPrice": 5.69,
+                  "calories": "320 Cals",
+                  "description": "Refresh and reenergize with the Frozen Red Bull infused with Peach flavour. Each cup contains a full can of Red Bull Peach Edition Energy Drink®. Frozen Red Bull contains 80mg of caffeine.",
+                  "isVegetarian": false,
+                  "caloriesNum": 320,
+                  "showImage": "Y",
+                  "interchangeIDs": "123369,123402",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13339,
+              "categoryName": "Frozen Red Bull® Lemonade",
+              "products": [
+                {
+                  "productID": 127974,
+                  "name": "Frozen Red Bull® Lemonade",
+                  "sku": "22074186d3har",
+                  "productPrice": 5.69,
+                  "calories": "290 Cals",
+                  "description": "Refresh and reenergize with a Frozen Red Bull infused with Lemonade flavour. Each cup contains a full can of Red Bull Energy Drink®. Frozen Red Bull contains 80mg of caffeine.",
+                  "isVegetarian": false,
+                  "caloriesNum": 290,
+                  "showImage": "Y",
+                  "interchangeIDs": "121252,121260",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 12466,
+          "categoryName": "Frozen Drinks",
+          "subCategories": [
+            {
+              "categoryID": 13331,
+              "categoryName": "Frozen Crush® Cream Soda",
+              "products": [
+                {
+                  "productID": 123577,
+                  "name": "Frozen Crush® Cream Soda",
+                  "sku": "Frozen Cream Soda",
+                  "productPrice": 3,
+                  "calories": "200-260 Cals",
+                  "description": "Frozen Crush® Cream Soda",
+                  "isVegetarian": false,
+                  "caloriesNum": 200,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13332,
+              "categoryName": "Frozen Crush® Orange",
+              "products": [
+                {
+                  "productID": 123582,
+                  "name": "Frozen Crush® Orange",
+                  "sku": "Frozen Orange",
+                  "productPrice": 3,
+                  "calories": "210-280 Cals",
+                  "description": "Frozen Crush® Orange",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13333,
+              "categoryName": "Frozen Brisk® Lemonade",
+              "products": [
+                {
+                  "productID": 116499,
+                  "name": "Frozen Brisk Lemonade",
+                  "sku": "Lemonade",
+                  "productPrice": 3,
+                  "calories": "190-250 Cals",
+                  "description": "Frozen Brisk Lemonade",
+                  "isVegetarian": false,
+                  "caloriesNum": 190,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13334,
+              "categoryName": "Frozen Sour Patch Kids Blue Raspberry",
+              "products": [
+                {
+                  "productID": 116484,
+                  "name": "Frozen Sour Patch Kids Blue Raspberry",
+                  "sku": "Blue Raspberry",
+                  "productPrice": 3,
+                  "calories": "180-250 Cals",
+                  "description": "Frozen Sour Patch Kids Blue Raspberry",
+                  "isVegetarian": false,
+                  "caloriesNum": 180,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 13335,
+              "categoryName": "Frozen Nerds® ",
+              "products": [
+                {
+                  "productID": 116481,
+                  "name": "Frozen Nerds®",
+                  "sku": "Slushie with Nerds",
+                  "productPrice": 3.5,
+                  "calories": "230-380 Cals",
+                  "description": "Frozen Nerds®",
+                  "isVegetarian": false,
+                  "caloriesNum": 230,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4231,
+          "categoryName": "Drinks",
+          "subCategories": [
+            {
+              "categoryID": 4243,
+              "categoryName": "Fountain Pop",
+              "products": [
+                {
+                  "productID": 116433,
+                  "name": "Pepsi",
+                  "sku": "Pepsi",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125444,
+                  "name": "Pepsi No Ice",
+                  "sku": "Pepsi No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 124295,
+                  "name": "Pepsi Zero Sugar",
+                  "sku": "Pepsi Zero - a la Carte",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125456,
+                  "name": "Pepsi Zero No Ice",
+                  "sku": "Pepsi Zero No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116436,
+                  "name": "Diet Pepsi",
+                  "sku": "Diet Pepsi",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125445,
+                  "name": "Diet Pepsi No Ice",
+                  "sku": "Diet Pepsi No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116439,
+                  "name": "Brisk Iced Tea",
+                  "sku": "Brisk Iced Tea",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125453,
+                  "name": "Brisk Iced Tea No Ice ",
+                  "sku": "Brisk Iced Tea No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116442,
+                  "name": "7 Up",
+                  "sku": "7 Up",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125458,
+                  "name": "7Up No Ice",
+                  "sku": "7Up No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116445,
+                  "name": "Mug Root Beer",
+                  "sku": "Mug Root Beer",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125459,
+                  "name": "Mug Root Beer No Ice",
+                  "sku": "Mug Root Beer No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 116451,
+                  "name": "Dr. Pepper",
+                  "sku": "Dr. Pepper",
+                  "productPrice": 3.09,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 123491,
+                  "name": "Brisk Lemonade",
+                  "sku": "Brisk Lemonade",
+                  "productPrice": 3.29,
+                  "description": " ",
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 125454,
+                  "name": "Brisk Lemonade No Ice",
+                  "sku": "Brisk Lemonade No Ice - a la Carte",
+                  "productPrice": 3.29,
+                  "isVegetarian": false,
+                  "productSubType": "Drink",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4456,
+              "categoryName": "Bottled Water",
+              "products": [
+                {
+                  "productID": 127878,
+                  "name": "Bottled Water",
+                  "sku": "22074003d3har",
+                  "productPrice": 2.39,
+                  "calories": "0 Cals",
+                  "description": "Bottled Water",
+                  "isVegetarian": false,
+                  "caloriesNum": 0,
+                  "showImage": "Y",
+                  "interchangeIDs": "97216,117180",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11646,
+              "categoryName": "Red Bull Energy Drink",
+              "products": [
+                {
+                  "productID": 127521,
+                  "name": "Peach Red Bull Energy Drink, 250 ml",
+                  "sku": "22074256d3har",
+                  "productPrice": 3.99,
+                  "calories": "110 Cals",
+                  "description": "A fresh white peach and nectarine taste. The Red Bull Peach Edition.",
+                  "isVegetarian": false,
+                  "caloriesNum": 110,
+                  "showImage": "Y",
+                  "interchangeIDs": "123366,123405",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127406,
+                  "name": "Red Bull Energy Drink, 250 ml",
+                  "sku": "22074187d3har",
+                  "productPrice": 3.99,
+                  "calories": "110 Cals",
+                  "description": "Vitalizes Body and Mind.",
+                  "isVegetarian": false,
+                  "caloriesNum": 110,
+                  "showImage": "Y",
+                  "interchangeIDs": "121258,121266",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128137,
+                  "name": "Watermelon Red Bull Energy Drink, 250 ml",
+                  "sku": "22074280d3har",
+                  "productPrice": 3.99,
+                  "calories": "110 Cals",
+                  "description": "The Red Bull Red Edition with the fresh taste of watermelon",
+                  "isVegetarian": false,
+                  "caloriesNum": 110,
+                  "showImage": "Y",
+                  "interchangeIDs": 124338,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4246,
+              "categoryName": "Juice",
+              "products": [
+                {
+                  "productID": 127251,
+                  "name": "Dole Apple Juice",
+                  "sku": "22074001d3har",
+                  "productPrice": 3.19,
+                  "calories": "210 Cals",
+                  "description": "Apple Juice ",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "showImage": "Y",
+                  "interchangeIDs": 97210,
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 127772,
+                  "name": "Dole Orange Juice",
+                  "sku": "22074002d3har",
+                  "productPrice": 3.19,
+                  "calories": "210 Cals",
+                  "description": "Orange Juice  ",
+                  "isVegetarian": false,
+                  "caloriesNum": 210,
+                  "showImage": "Y",
+                  "interchangeIDs": 97213,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4234,
+              "categoryName": "Milk",
+              "products": [
+                {
+                  "productID": 127716,
+                  "name": "Chocolate Milk",
+                  "sku": "22074004d3har",
+                  "productPrice": 1.99,
+                  "calories": "120 Cals",
+                  "description": "Chocolate Milk",
+                  "isVegetarian": false,
+                  "caloriesNum": 120,
+                  "showImage": "Y",
+                  "interchangeIDs": "97222,117216",
+                  "customFields": [
+                    ""
+                  ]
+                },
+                {
+                  "productID": 128106,
+                  "name": "Milk",
+                  "sku": "22074005d3har",
+                  "productPrice": 1.99,
+                  "calories": "100 Cals",
+                  "description": "Milk",
+                  "isVegetarian": false,
+                  "caloriesNum": 100,
+                  "showImage": "Y",
+                  "interchangeIDs": "97219,117213",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4471,
+              "categoryName": "Coffee",
+              "products": [
+                {
+                  "productID": 128216,
+                  "name": "Coffee ",
+                  "sku": "22074006d3har",
+                  "productPrice": 1.79,
+                  "calories": "5 Cals",
+                  "description": "Coffee ",
+                  "isVegetarian": false,
+                  "caloriesNum": 5,
+                  "showImage": "Y",
+                  "interchangeIDs": "97237,117204",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4474,
+              "categoryName": "Tea",
+              "products": [
+                {
+                  "productID": 127298,
+                  "name": "Tea",
+                  "sku": "22074007d3har",
+                  "productPrice": 1.79,
+                  "calories": "4 Cals",
+                  "description": "Tea",
+                  "isVegetarian": false,
+                  "caloriesNum": 4,
+                  "showImage": "Y",
+                  "interchangeIDs": "97240,117201",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 4249,
+          "categoryName": "Kids",
+          "subCategories": [
+            {
+              "categoryID": 11275,
+              "categoryName": "Jr. Crispy Kids Combo",
+              "products": [
+                {
+                  "productID": 127156,
+                  "name": "Jr. Crispy Kids Meal",
+                  "sku": "22056003har",
+                  "productPrice": 5.89,
+                  "calories": "610-830 Cals",
+                  "description": "Seasoned chicken made with 100% Canadian chicken, toasted bun and choice of garnishes. Available with a kids fry, activity, and a kids drink (apple juice, milk or pop).",
+                  "isVegetarian": false,
+                  "caloriesNum": 610,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4252,
+              "categoryName": "Kids Jr. Burger Combo",
+              "products": [
+                {
+                  "productID": 127689,
+                  "name": "Jr. Burger Kids Meal",
+                  "sku": "22056001har",
+                  "productPrice": 5.49,
+                  "calories": "570-790 Cals",
+                  "description": "Flame-grilled beef Jr. patty, soft toasted bun and choice of garnishes. Available with a kids fry, activity, and a kids drink (apple juice, milk or pop).",
+                  "isVegetarian": false,
+                  "caloriesNum": 570,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 4321,
+              "categoryName": "Kids Jr. Cheeseburger Combo",
+              "products": [
+                {
+                  "productID": 127191,
+                  "name": "Jr. Cheeseburger Kids Meal",
+                  "sku": "22056002har",
+                  "productPrice": 5.89,
+                  "calories": "600-820 Cals",
+                  "description": "Flame-grilled beef Jr. patty, slice of melted processed cheddar-style cheese, soft toasted bun and choice of garnishes. Available with a kids fry, activity, and a kids drink (apple juice, milk or pop).",
+                  "isVegetarian": false,
+                  "caloriesNum": 600,
+                  "productSubType": "Burger",
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11682,
+              "categoryName": "Kids Chicken Nuggets Combo (5)",
+              "products": [
+                {
+                  "productID": 128190,
+                  "name": "Kids Chicken Nuggets (5) Combo",
+                  "sku": "22056004har",
+                  "productPrice": 6.79,
+                  "calories": "760-980 Cals",
+                  "description": "Crispy seasoned chicken breast bites made with 100% Canadian chicken served with your choice of dipping sauce. Available with a kids fry, activity, and a kids drink (apple juice, milk or pop).",
+                  "isVegetarian": false,
+                  "caloriesNum": 760,
+                  "showImage": "Y",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "categoryID": 11937,
+          "categoryName": "Sauces",
+          "subCategories": [
+            {
+              "categoryID": 13944,
+              "categoryName": "Gravy",
+              "products": [
+                {
+                  "productID": 127792,
+                  "name": "Gravy",
+                  "sku": "22084027d3har",
+                  "productPrice": 0.99,
+                  "calories": "40 Cals",
+                  "description": "Our signature vegetarian gravy with an unmistakable savoury flavour. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 40,
+                  "showImage": "Y",
+                  "interchangeIDs": "116391,116394",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11938,
+              "categoryName": "BBQ dipping sauce",
+              "products": [
+                {
+                  "productID": 127311,
+                  "name": "BBQ Sauce",
+                  "sku": "22084085d3har",
+                  "productPrice": 0.4,
+                  "calories": "10 Cals",
+                  "description": "Tangy BBQ sauce is made with a tomato base with a sweet hickory flavor and spices.",
+                  "isVegetarian": false,
+                  "caloriesNum": 10,
+                  "showImage": "Y",
+                  "interchangeIDs": 123228,
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11939,
+              "categoryName": "Honey mustard dipping sauce",
+              "products": [
+                {
+                  "productID": 127869,
+                  "name": "Honey Mustard",
+                  "sku": "22084086d3har",
+                  "productPrice": 0.4,
+                  "calories": "90 Cals",
+                  "description": "The perfect blend of zesty dijon mustard with sweet honey. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 90,
+                  "showImage": "Y",
+                  "interchangeIDs": "123229,123236",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11940,
+              "categoryName": "Ranch dipping sauce",
+              "products": [
+                {
+                  "productID": 127176,
+                  "name": "Ranch",
+                  "sku": "22084087d3har",
+                  "productPrice": 0.4,
+                  "calories": "20 Cals",
+                  "description": "Creamy and herbaceous ranch sauce with onion and garlic flavour.",
+                  "isVegetarian": false,
+                  "caloriesNum": 20,
+                  "showImage": "Y",
+                  "interchangeIDs": "123230,123237",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11941,
+              "categoryName": "Sweet and Sour dipping sauce",
+              "products": [
+                {
+                  "productID": 127755,
+                  "name": "Sweet and Sour",
+                  "sku": "22084088d3har",
+                  "productPrice": 0.4,
+                  "calories": "50 Cals",
+                  "description": "A balance combination of sweet and tangy flavours and hints of savoury spices. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 50,
+                  "showImage": "Y",
+                  "interchangeIDs": "123238,123231",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11942,
+              "categoryName": "Ghost Pepper dipping sauce",
+              "products": [
+                {
+                  "productID": 127403,
+                  "name": "Ghost Pepper",
+                  "sku": "22084089d3har",
+                  "productPrice": 0.4,
+                  "calories": "120 Cals",
+                  "description": "Smoky and spicy with a strong kick of heat from ghost peppers. ",
+                  "isVegetarian": false,
+                  "caloriesNum": 120,
+                  "showImage": "Y",
+                  "interchangeIDs": "123239,123232",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11943,
+              "categoryName": "Sweet Heat dipping sauce",
+              "products": [
+                {
+                  "productID": 127495,
+                  "name": "Sweet Heat",
+                  "sku": "22084090d3har",
+                  "productPrice": 0.4,
+                  "calories": "45 Cals",
+                  "description": "A little sweet, sour and spicy with notes of chilli, garlic and pepper.",
+                  "isVegetarian": false,
+                  "caloriesNum": 45,
+                  "showImage": "Y",
+                  "interchangeIDs": "123240,123233",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "categoryID": 11944,
+              "categoryName": "Garlic Dill dipping sauce",
+              "products": [
+                {
+                  "productID": 127517,
+                  "name": "Garlic Dill",
+                  "sku": "22084091d3har",
+                  "productPrice": 0.4,
+                  "calories": "90 Cals",
+                  "description": "A creamy sauce with a depth of garlic flavour and tangy dill.",
+                  "isVegetarian": false,
+                  "caloriesNum": 90,
+                  "showImage": "Y",
+                  "interchangeIDs": "123241,123234",
+                  "customFields": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

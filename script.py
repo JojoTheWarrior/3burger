@@ -14,6 +14,8 @@ import time
 import random
 from rsa import decrypt
 import os
+import shutil
+import tempfile
 
 # for job + polling
 import threading, uuid, time
@@ -106,16 +108,46 @@ def get_burger():
     return run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
 
     
+RUNTIME_PROFILE_PARENT = os.path.join(os.getcwd(), "chrome_profiles", "runtime")
+
+def make_runtime_profile_dir():
+    os.makedirs(RUNTIME_PROFILE_PARENT, exist_ok=True)
+    return tempfile.mkdtemp(prefix="harveys_", dir=RUNTIME_PROFILE_PARENT)
+
+def cleanup_runtime_profile_dir(profile_dir):
+    if not profile_dir:
+        return
+
+    for attempt in range(5):
+        try:
+            shutil.rmtree(profile_dir)
+            print(f"deleted chrome profile {profile_dir}")
+            return
+        except FileNotFoundError:
+            return
+        except PermissionError:
+            # Chrome sometimes releases profile files a beat after driver.quit().
+            time.sleep(1 + attempt)
+        except Exception as e:
+            print(f"couldn't delete chrome profile {profile_dir}: {e}")
+            return
+
+    print(f"couldn't delete chrome profile {profile_dir}: files still locked")
+
 # for more user-like movements
-def get_human_like_options():
+def get_human_like_options(profile_dir):
     options = Options()
 
     # basic safe flags
     options.add_argument("--start-maximized")
-    options.add_argument("--incognito")
+    options.add_argument(f"--user-data-dir={profile_dir}")
+    options.add_argument("--profile-directory=Default")
+    options.add_argument("--no-first-run")
+    options.add_argument("--no-default-browser-check")
 
     # helps bypass basic automation detection
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_experimental_option("useAutomationExtension", False)
 
     # server / docker stability flags
     options.add_argument("--no-sandbox")
@@ -128,15 +160,23 @@ def get_human_like_options():
     return options
 
 def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name):
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()),
-        options=get_human_like_options()
-    )
-    driver.get("https://order.harveys.ca/login")
+    profile_dir = make_runtime_profile_dir()
+    driver = None
+    print(f"using fresh chrome profile {profile_dir}")
 
-    wait = WebDriverWait(driver, 20)
-    
     try:
+        driver = webdriver.Chrome(
+            service=Service(ChromeDriverManager().install()),
+            options=get_human_like_options(profile_dir)
+        )
+        driver.execute_cdp_cmd(
+            "Page.addScriptToEvaluateOnNewDocument",
+            {"source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"}
+        )
+        driver.get("https://order.harveys.ca/login")
+
+        wait = WebDriverWait(driver, 20)
+
         # testing card decryption
         card_month, card_year = card.get("expiry").split("/")
         print(f"card month {card_month}, card year {card_year}")
@@ -459,7 +499,7 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
             EC.visibility_of_element_located((By.XPATH, "//*[contains(translate(normalize-space(.),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'feedback')]"))
         )
 
-        time.sleep(20)
+        time.sleep(200)
 
         print("burger ordered")
         return jsonify({"ok": True, "message": "burger ordered"}), 200
@@ -469,7 +509,9 @@ def run_selenium_task(toppings, sauces, location, order_time, card, pickup_name)
         return jsonify({"ok": False, "error": "smth went wrong"}), 500
 
     finally:
-        driver.quit()
+        if driver:
+            driver.quit()
+        cleanup_runtime_profile_dir(profile_dir)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5420)

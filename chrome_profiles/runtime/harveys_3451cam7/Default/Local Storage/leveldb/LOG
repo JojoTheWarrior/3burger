@@ -1,0 +1,11 @@
+2026/07/17-15:10:08.429 789c Creating DB C:\Users\joshu\Desktop\VSCode Projects\3burger\chrome_profiles\runtime\harveys_3451cam7\Default\Local Storage\leveldb since it was missing.
+2026/07/17-15:10:08.447 789c Reusing MANIFEST C:\Users\joshu\Desktop\VSCode Projects\3burger\chrome_profiles\runtime\harveys_3451cam7\Default\Local Storage\leveldb/MANIFEST-000001
+2026/07/17-15:10:24.583 62b8 Level-0 table #5: started
+2026/07/17-15:10:24.597 62b8 Level-0 table #5: 25104 bytes OK
+2026/07/17-15:10:24.600 62b8 Delete type=0 #3
+2026/07/17-15:11:08.465 62b8 Level-0 table #7: started
+2026/07/17-15:11:08.470 62b8 Level-0 table #7: 23889 bytes OK
+2026/07/17-15:11:08.472 62b8 Delete type=0 #4
+2026/07/17-15:12:09.016 62b8 Level-0 table #9: started
+2026/07/17-15:12:09.022 62b8 Level-0 table #9: 49257 bytes OK
+2026/07/17-15:12:09.024 62b8 Delete type=0 #6
